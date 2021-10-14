@@ -17,7 +17,7 @@
 
 # The Grim Secret
 
-The Grim Secet is a nostaligc 1980's style text-based adventure game. The purpose of the game is to provide a spooky, interative story that the user can engage in and manipulate. This game was built using HTML, CSS and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/).
+The Grim Secet is a nostaligc 1980's style text-based adventure game. The purpose of the game is to provide a spooky, interative story that the user can engage in and manipulate. This game will be built using HTML, CSS and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/).
                       
 ## UX
 
