@@ -6,3 +6,6 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
+.venv/
+.vscode/
+.DS_Store
