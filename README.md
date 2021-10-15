@@ -15,9 +15,9 @@ User Stories were created during the development phase of this project to help t
 | ID #       | As A/An... | I wan't to be able to... | So that I can... | Status |
 | ----------- | ----------- | ----------- | ----------- | ----------- | 
 |   1        | User       | Control when the game starts        | Start the game when I'm ready to play   |             |
-| 2        | User       |         | Achieve Y   |             |
-| 3        | User       | Do X        | Achieve Y   |             |
-| 4        | User       | Do X        | Achieve Y   |             |
+| 2        | User  |  Use my mouse or keyboard to navigate | Play the game/be part of the experience   |             |
+| 3        | User       | Preview a prompt/dialog | Understand how to approach the next level  |             |
+| 4        | User       | Choose from a selection of answers | Progress to the next level |             |
 | 5        | User       | Do X        | Achieve Y   |             |
 
 Features:
