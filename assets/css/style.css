@@ -1,0 +1,39 @@
+/* Root variables & imports */
+:root {
+    /* 1rem = 10px
+    This allows for greater control of calculating font sizes */
+    font-size: 62.5%;
+
+    /* Use of root variables to set typography, colors, utilites */
+
+    /* Typography */
+    /* Replace Arial/Tahoma with actual project fonts when ready */
+    --header-text: Arial, sans-serif;
+    --content-text: Tahoma, sans-serif;
+
+    /* Colors */
+    /* Replace and add to below with actual project color theme */
+    --p-color: #000000;
+    --s-color: #e64b18;
+    --t-color: #602749;
+}
+
+/* Globals */
+/* Should contain common components used throughout project */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--p-color);
+}
+
+/* Main */
+p {
+    /* Remove this when applicable, just for testing */
+    font-size: 2rem;
+    color: var(--s-color);
+}
