@@ -10,13 +10,13 @@ Spooky Escape is an online spooky story experience, that challenges users to mak
 
 User Stories were created during the development phase of this project to help the developers plan out features and begin the wireframing process.
 
-| User      | As A/An... | I wan't to be able to... | So that I can... | Status |
+| ID #       | As A/An... | I wan't to be able to... | So that I can... | Status |
 | ----------- | ----------- | ----------- | ----------- | ----------- | 
-| User        | Title       | ----------- | ----------- |
-| User        | Text        | ----------- | ----------- |
-| User        | Text        | ----------- | ----------- |
-| User        | Text        | ----------- | ----------- |
-| User        | Text        | ----------- | ----------- |
+|   1        | User       | Control when the game starts        | Start the game when I'm ready to play   |             |
+| 2        | User       |         | Achieve Y   |             |
+| 3        | User       | Do X        | Achieve Y   |             |
+| 4        | User       | Do X        | Achieve Y   |             |
+| 5        | User       | Do X        | Achieve Y   |             |
 
 Features:
 
