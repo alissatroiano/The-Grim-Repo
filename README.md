@@ -1,27 +1,14 @@
+# Spooky Escape
 
-     |     ___
-    (=\.  /-. \
-     |\/\_|"|  |
-     |_\ |;-|  ;
-     | / \| |_/ \
-     | )/\/      \
-     | ( '|  \   |
-     |    \_ /   \
-     |    /  \_.--\
-     \    |    (|\`
-      |   |     \
-      |   |      '.
-      |  /         \
-      \  \.__.__.-._)
-         `---'`   `'----'`
-
-# The Grim Secret
-
-The Grim Secet is a nostaligc 1980's style text-based adventure game. The purpose of the game is to provide a spooky, interative story that the user can engage in and manipulate. This game will be built using HTML, CSS and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/).
+Spooky Escape is an online spooky story experience, that challenges users to make logical decisions that will control their fate. Follow the prompts to escape this terrifying nightmare. This game will be built using HTML, CSS and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/).
                       
 ## UX
 
-**Target market**: Millenialls and/or anybody that enjoys an authentic 80’s game-like experience
+**Target market**: Peopke that want to have fun while challenging their imagination.
+
+**User Stories**:
+
+User Stories were created during the development phase of this project to help the developers plan out fetues and begin the wireframe process.
 
 Features:
 
