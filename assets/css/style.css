@@ -109,6 +109,7 @@ a {
     font-family: var(--content-text);
     color: var(--t-color);
     margin: 1rem;
+    position:relative;     /* Kelv - added to enable positioing of text fades in / out of same location */
 }
 
 .main-scene-container {
@@ -116,6 +117,7 @@ a {
     border-radius: 1rem;
     min-height: 20rem;
     margin: 2rem auto;
+    background-color:--p-color;
 }
 
 .main-scene-image {
@@ -245,3 +247,54 @@ p {
     color: var(--s-color);
     font-family: var(--content-text);
 }
+
+
+/* Scene 1 */
+.s1-main-img {
+    background-image: url("/assets/images/beds.jpg");
+    background-size: cover;
+    background-position: 0 70%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+    min-height: 100%;
+    max-height: none;
+    animation: mainImgFadeIn 8s;
+}
+
+@keyframes mainImgFadeIn {
+    0% {opacity: 0%;}
+    10% {opacity: 0%;}
+    60% {opacity: 10%;}
+    100% {opacity:100%;} 
+}
+
+
+.story-txt {
+    animation: textFadeInOut 20s;  
+    visibility:hidden;
+    text-align: center;
+    width: 100%; 
+}
+
+#S1-story-txt1 {
+    animation-delay:5s;
+    position: absolute;
+    top:5vh;
+}
+
+#S1-story-txt2 {
+    animation-delay:20s;
+    position: absolute;
+    top:5vh;
+}
+
+
+@keyframes textFadeInOut {
+    0% {visibility: hidden; opacity: 0%;}
+    20% {visibility: visible; opacity:1%;}
+    40% {visibility: visible; opacity:80%;}
+    80% {visibility: visible; opacity:80%;}
+    100% {visibility: hidden; opacity:0%; display: none} /*-- display none added in final sequence to reove the element from the DOM so as the next text box appears in same location --*/
+}
+
