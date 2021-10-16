@@ -9,3 +9,5 @@ node_modules/
 .venv/
 .vscode/
 .DS_Store
+.gitpod.dockerfile
+.gitpod.yml
