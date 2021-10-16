@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon -->
+
+        <!-- External Libraries/Frameworks CSS Links-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+            integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Project Custom CSS Link -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Replace {name} with name of scene -->
+        <title>Spooky Escape - Scene1 Awaken</title>
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <div class="container scene-nav">
+            <div class="row text-center">
+                <div class="col-sm-12 col-lg-4 brand">
+                    <svg id="nav-ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001">
+                        <g>
+                            <g>
+                                <g>
+                                    <path d="M417.913,490.426c-0.385-0.138-38.763-14.23-55.472-58.08c-14.151-37.133-6.785-79.476,19.224-110.507
+                                            c14.821-17.682,63.176-79.533,63.176-132.999C444.84,84.714,360.127,0,256.001,0S67.161,84.714,67.161,188.84
+                                            c0,69.232,32.57,145.853,87.125,204.963c45.579,49.385,127.55,109.975,259.215,118.176c0.234,0.014,0.467,0.022,0.699,0.022
+                                            c5.239,0,9.811-3.685,10.875-8.88C426.183,497.695,423.129,492.281,417.913,490.426z M170.611,378.734
+                                            c-50.867-55.113-81.234-126.102-81.234-189.895c0-91.876,74.747-166.623,166.623-166.623s166.623,74.747,166.623,166.623
+                                            c0,36.528-29.954,85.282-57.986,118.728c-31.175,37.196-39.972,88.039-22.957,132.689c7.327,19.227,18.055,33.74,28.872,44.473
+                                            C271.864,468.026,208.092,419.344,170.611,378.734z" />
+                                    <path d="M234.291,141.511c0-23.67-14.638-42.211-33.325-42.211c-18.686,0-33.325,18.541-33.325,42.211
+                                            c0,23.671,14.637,42.211,33.325,42.211C219.652,183.722,234.291,165.181,234.291,141.511z M200.966,161.506
+                                            c-5.244,0-11.108-8.551-11.108-19.995c0-11.444,5.864-19.995,11.108-19.995s11.108,8.551,11.108,19.995
+                                            C212.074,152.955,206.21,161.506,200.966,161.506z" />
+                                    <path
+                                        d="M305.382,99.3c-18.686,0-33.325,18.541-33.325,42.211c0,23.671,14.638,42.211,33.325,42.211s33.325-18.541,33.325-42.211
+                                            C338.707,117.84,324.07,99.3,305.382,99.3z M305.382,161.506c-5.244,0-11.108-8.551-11.108-19.995
+                                            c0-11.444,5.864-19.995,11.108-19.995s11.108,8.551,11.108,19.995C316.49,152.955,310.626,161.506,305.382,161.506z" />
+                                    <path d="M253.174,201.495c-22.356,0-40.545,18.189-40.545,40.545v32.214c0,22.356,18.189,40.545,40.545,40.545
+                                            c22.355,0,40.545-18.189,40.545-40.545V242.04C293.719,219.684,275.53,201.495,253.174,201.495z M271.502,274.254
+                                            c0,10.106-8.221,18.329-18.329,18.329c-10.106,0-18.329-8.222-18.329-18.329V242.04c0-10.106,8.222-18.329,18.329-18.329
+                                            c10.106,0,18.329,8.222,18.329,18.329V274.254z" />
+                                    <path
+                                        d="M361.099,257.152c1.806,1.102,3.802,1.626,5.773,1.626c3.746,0,7.401-1.895,9.494-5.326
+                                            c15.503-25.419,24.04-48.366,24.04-64.613c0-6.135-4.974-11.108-11.108-11.108c-6.134,0-11.108,4.973-11.108,11.108
+                                            c0,11.869-7.772,31.698-20.791,53.045C354.205,247.121,355.862,253.957,361.099,257.152z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <a href="#">
+                        <h1 class="brand-name">Horror Escape</h1>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <h2 class="scene-title">Awaken</h2>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img class="img-fluid nav-modal-img" src="assets/images/scroll.png"
+                            alt="Scroll Image to Launch Modal">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story container -->
+        <div class="container story-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Replace "scene" with actual scene name -->
+                    <!-- <h2 class="story-scene-title">Awaken</h2>.    removed story title as replicates title above -->
+                    <div class="story-detail">
+                        <p id="S1-story-txt1" class="story-txt">
+                            My eyes open, I can't see at first, but gradually my vision comes into focus. Where the hell am I?
+                            <br> Seems to be some form of medical room, but that smell......it's so rotten!
+                            <br>How did I even get here? I feel like I must have been out for sometime.
+                        </p>
+                        <p id="S1-story-txt2" class="story-txt">
+                            I can remember something .... a strange encounter, was there an argument? 
+                            <br>Yes, I was at a dinner event, who was it that invited me there?
+                            <br>Right now I need to get off this disgusting bed and out of this room! Wait, one of wrists is cuffed. There must be something I can do?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Scene Image container -->
+        <div class="container main-scene-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Replace "img" with actual scene img required -->
+                    <div class="s1-main-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User interaction container-->
+        <div class="container user-interactions-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="user-interaction-title">Reader's Options</h2>
+                    <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-leave">Search the room for clues</button>
+                        <button type="button" class="btn btn-info">Call for help!</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Modal-pockets">Check pockets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Options Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Options</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        replace this with actual options and style to fit theme....
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal-pockets" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Check Your Pockets</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        You have your mobile phone in your pocket..... but no signal!! It only has 5% battery so you switch it off and put it back in your pocket, that might come in useful later.
+                        You also have a business card with some strange symbols on.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal-leave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Check Your Pockets</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        You reach across to some old dusty medical files on the cabinet beside the bed. You try not to look at the awful images inside which seem to be a mixture of barbaric tourture and rituals - and take a large paper clip holding them together. It takes some time, but you manage to use this to unpick the handcuff lock. You jump off the bed and leave the room. 
+                        <!-- need to add link here to next scene -->
+                       <a href=""> Click here to continue </a> 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- External Libraries/Frameworks JS Links-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+            integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Project Custom JS Link -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
+
