@@ -1,21 +1,21 @@
 /* Root variables & imports */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Goudy+Bookletter+1911&display=swap');
+
 :root {
     /* 1rem = 10px
     This allows for greater control of calculating font sizes */
     font-size: 62.5%;
 
-    /* Use of root variables to set typography, colors, utilites */
-
     /* Typography */
-    /* Replace Arial/Tahoma with actual project fonts when ready */
-    --header-text: Arial, sans-serif;
-    --content-text: Tahoma, sans-serif;
+    --header-text: 'EB Garamond', sans-serif;
+    --content-text: 'Goudy Bookletter 1911', serif;
 
     /* Colors */
     /* Replace and add to below with actual project color theme */
     --p-color: #190225;
     --s-color: #e64b18;
     --t-color: #602749;
+    --l-color: #e6e2b3;
 }
 
 /* Globals */
@@ -29,6 +29,117 @@
 
 body {
     background-color: var(--p-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+.scene-nav {
+    padding: 3rem 0;
+}
+
+.scene-nav .row {
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-ghost {
+    height: 10%;
+    width: 10%;
+    fill: var(--l-color);
+    opacity: 0;
+}
+
+.brand:hover > #nav-ghost {
+    animation: 3s ease-in-out infinite fadeLeft;
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+}
+
+.brand-name {
+    font-family: var(--header-text);
+    color: var(--l-color);
+}
+
+.scene-title {
+    font-family: var(--content-text);
+    color: var(--l-color);
+}
+
+.nav-modal-img {
+    width: 15%;
+}
+
+/* Scene template ~~ delete before submission ~~ */
+.story-container {
+    border: 1px solid var(--s-color);
+    border-radius: 1rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+}
+
+.story-scene-title, .user-interaction-title {
+    font-family: var(--header-text);
+    color: var(--s-color);
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.story-detail {
+    font-family: var(--content-text);
+    color: var(--t-color);
+    margin: 1rem;
+}
+
+.main-scene-container {
+    border: 1px solid var(--s-color);
+    border-radius: 1rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+}
+
+.main-scene-image {
+    background: url("../images/pexels-felipe-hueb-2747893.jpg") no-repeat center center;
+    background-size: cover;
+    object-fit: contain;
+    height: 40vh;
+    min-height: 100%;
+    max-height: none;
+}
+
+.user-interactions-container {
+    border: 1px solid var(--s-color);
+    border-radius: 1rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+}
+
+.user-interaction-buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    margin-top: 4rem;
 }
 
 /* Main */
