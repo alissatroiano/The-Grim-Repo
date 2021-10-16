@@ -1,4 +1,6 @@
 /* Root variables & imports */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     /* 1rem = 10px
     This allows for greater control of calculating font sizes */
@@ -8,8 +10,8 @@
 
     /* Typography */
     /* Replace Arial/Tahoma with actual project fonts when ready */
-    --header-text: Arial, sans-serif;
-    --content-text: Tahoma, sans-serif;
+    --header-text: Creepster, Cursive;
+    --content-text: Roboto, sans-serif;
 
     /* Colors */
     /* Replace and add to below with actual project color theme */
@@ -32,8 +34,98 @@ body {
 }
 
 /* Main */
+.container-fluid.jumbotron {
+    background-color: var(--p-color);
+    color: var(--t-color);
+    padding: 2rem;
+    max-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--header-text);
+    font-size: 5rem;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+/* Fade in animation for header */
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End fade in animation for header */
+
+/* Fade in animation for opening */
+p#openingscene {
+    font-family: var(--content-text);
+    font-size: 2rem;
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari and Chrome */
+    -o-animation: fadein 10s; /* Opera */
+}
+
+/* Fade in animation for opening */
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End fade in animation for opening */
+
 p {
     /* Remove this when applicable, just for testing */
     font-size: 2rem;
     color: var(--s-color);
+    font-family: var(--content-text);
 }
