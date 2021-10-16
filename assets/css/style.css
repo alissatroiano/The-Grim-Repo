@@ -45,15 +45,15 @@ body {
     background-size: cover;
 }
 
-h1 {
-    margin-top: 50px;
+h1#reveal {
+    margin-top: 150px;
     font-family: var(--header-text);
     color: var(--s-color);
-    font-size: 5rem;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    font-size: 8rem;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
 }
 
 /* Fade in animation for header */
@@ -90,10 +90,10 @@ p#openingscene {
     font-family: var(--content-text);
     color: #fafafa;
     font-size: 2rem;
-    animation: fadein 10s;
-    -moz-animation: fadein 10s; /* Firefox */
-    -webkit-animation: fadein 10s; /* Safari and Chrome */
-    -o-animation: fadein 10s; /* Opera */
+    animation: fadein 15s;
+    -moz-animation: fadein 15s; /* Firefox */
+    -webkit-animation: fadein 15s; /* Safari and Chrome */
+    -o-animation: fadein 15s; /* Opera */
 }
 
 /* Fade in animation for opening */
