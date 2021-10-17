@@ -27,8 +27,8 @@ audio1.onpause = function() {
 
 
 function phoneOn() {
-  var myModalEl = document.getElementById('Modal-office');
-  var modal = bootstrap.Modal.getInstance(myModalEl)
+  let myModalEl = document.getElementById('Modal-office');
+  let modal = bootstrap.Modal.getInstance(myModalEl)
   modal.hide();
   
   
@@ -40,14 +40,18 @@ function phoneOn() {
   document.getElementById("office-img").className += " torch";
 
 
-function update(e){
-  var x = e.clientX || e.touches[0].clientX
-  var y = e.clientY || e.touches[0].clientY
+  function update(e){
+    let image = document.querySelector("div.s3-main-img");
 
-  document.documentElement.style.setProperty('--cursorX', x + 'px')
-  document.documentElement.style.setProperty('--cursorY', y + 'px')
+    let rect = image.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+  
+    document.documentElement.style.setProperty('--cursorX', x + 'px')
+    document.documentElement.style.setProperty('--cursorY', y + 'px')
   }
-
+  
   document.addEventListener('mousemove',update)
-  document.addEventListener('touchmove',update)
+  
+  
 }

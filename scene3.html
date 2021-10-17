@@ -70,7 +70,7 @@
                             alt="Scroll Image to Launch Modal">
                     </button>
                     <!--Toggle Audio Button-->
-                    <audio id="audio1" src="./assets/audio/Scene3 - background-audio.m4a" preload="auto"></audio>
+                    <audio id="audio" preload="auto"></audio>
                     <a class="btn active btn-audio" aria-pressed="true" onClick="togglePlay()">Toggle Audio</a>
                 </div>
             </div>
@@ -79,7 +79,7 @@
         <!-- Story container -->
         <div class="container story-container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="text-center">
                     <!-- Replace "scene" with actual scene name -->
                     <!-- <h2 class="story-scene-title">Awaken</h2>.    removed story title as replicates title above -->
                     <div class="story-detail">
@@ -95,11 +95,11 @@
         </div>
 
         <!-- Main Scene Image container -->
-        <div class="container main-scene-container">
+        <div class="container main-scene-container office-img-block">
             <div class="row">
-                <div class="col-12 text-center">
+                <div id="office-img-outer" class="col-12 text-center office-img-block">
                     <!-- Replace "img" with actual scene img required -->
-                    <div id="office-img" class="s3-main-img"></div>
+                    <div id="office-img" class="main-scene-image s3-main-img"></div>
                     <div id="s3-img-overlay"></div>
                     <button class="hidden1" data-bs-toggle="modal" data-bs-target="#Modal-cupboard"></button> <!--cupboard-->
                     <button class="hidden2" data-bs-toggle="modal" data-bs-target="#Modal-bin"></button> <!--bin-->

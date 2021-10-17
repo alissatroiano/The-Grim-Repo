@@ -17,8 +17,10 @@
     --t-color: #602749;
     --l-color: #e6e2b3;
 
-    --cursorX: 5vw;
-    --cursorY: 5vh;
+    /*-cursor position - used to update tracking of torchlight --*/
+    --cursorX: 35vw;
+    --cursorY: 20vh;
+  
 }
 
 .large-text {
@@ -371,15 +373,24 @@ p#openingscene {
     top: 4vh;
 }
 
+.office-img-block {
+    width: 80vw;
+    overflow: hidden;
+
+}
+
 .s3-main-img {
-    background: url("/assets/images/office.jpeg");
+    background-image: url("/assets/images/office.jpeg");
     background-size: cover;
     background-position: 0 70%;
-    object-fit: contain;
+    object-fit: cover;
     background-repeat: no-repeat;
     height: 40vh;
+    width:inherit;
+    max-width:1318px;
     min-height: 100%;
     max-height: none;
+    overflow: hidden;
 }
 
 #s3-img-overlay {
@@ -393,14 +404,14 @@ p#openingscene {
 
 /*- cupboard -*/
 .hidden1 {
-    /*- border:solid 5px red;-*/
-    border: none;
+    border:solid 5px red;
+    /*-border: none;-*/
     background-color:rgba(0, 0, 0, 0);
-    width:5vw;
-    height:10vh;
+    width:10%;
+    height:30%;
     position:absolute;
-    top:3vh;
-    left:30vw;
+    top:5%;
+    left:30%;
     bottom:0;
     right:0;
     cursor: default;
@@ -409,14 +420,13 @@ p#openingscene {
 
 /*- bin -*/
 .hidden2 {
-    /*- border:solid 5px blue;-*/
-    border: none;
+    border:solid 5px blue;
     background-color:rgba(0, 0, 0, 0);
-    width:5vw;
-    height:10vh;
+    width:10%;
+    height:20%;
     position:absolute;
-    top:26vh;
-    left:45vw;
+    top:67%;
+    left:52%;
     bottom:0;
     right:0;
     cursor: default;
@@ -424,14 +434,14 @@ p#openingscene {
 
 /*- chair -*/
 .hidden3 {
-    /*- border:solid 5px green;-*/
-    border: none;
+    border:solid 5px green;
+   
     background-color:rgba(0, 0, 0, 0);
-    width:8vw;
-    height:20vh;
+    width:8%;
+    height:20%;
     position:absolute;
-    top:15vh;
-    left:52vw;
+    top:50%;
+    left:65%;
     bottom:0;
     right:0;
     cursor: default;
@@ -439,14 +449,14 @@ p#openingscene {
 
 /*- desk -*/
 .hidden4 {
-    /*- border:solid 5px yellow;-*/
-    border: none;
+    border:solid 5px yellow;
+
     background-color:rgba(0, 0, 0, 0);
-    width:20vw;
-    height:20vh;
+    width:20%;
+    height:20%;
     position:absolute;
-    top:15vh;
-    left:24vw;
+    top:50%;
+    left:28%;
     bottom:0;
     right:0;
     cursor: default;
@@ -454,14 +464,14 @@ p#openingscene {
 
 /*- floor -*/
 .hidden5 {
-    /*- border:solid 5px blueviolet;-*/
-    border: none;
+    border:solid 5px blueviolet;
+    
     background-color:rgba(0, 0, 0, 0);
-    width:15vw;
-    height:10vh;
+    width:25%;
+    height:20%;
     position:absolute;
-    top:25vh;
-    left:5vw;
+    top:80%;
+    left:5%;
     bottom:0;
     right:0;
     cursor: default;
@@ -475,13 +485,15 @@ p#openingscene {
 .torch:before {
     content: '';
     display: block;
-    width: 75vw;
-    height: 40vh;
+    width: 79%;
+    max-width:1320px;
+    overflow-x:hidden;
+    height: inherit;
     position: fixed;
     background: radial-gradient(
-      circle 5vmax at calc(var(--cursorX)) calc(var(--cursorY)),
+      circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
       rgba(0,0,0,0) 0%,
-      rgba(0,0,0,0.5) 80%,
+      rgba(0,0,0,0.5) 60%,
       rgba(0,0,0,0.95) 100%
     )
 }
