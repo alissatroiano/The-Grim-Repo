@@ -10,24 +10,35 @@ Spooky Escape is an online spooky story experience, that challenges users to mak
 
 **User Stories**:
 
-User Stories were created during the development phase of this project to help the developers plan out features and begin the wireframing process.
+User Stories were created during the development phase of this project to help the developers plan out features and create wireframes.
 
 | ID #       | As A/An... | I wan't to be able to... | So that I can... | Status |
 | ----------- | ----------- | ----------- | ----------- | ----------- | 
-|   1        | User       | Control when the game starts        | Start the game when I'm ready to play   |             |
-| 2        | User  |  Use my mouse or keyboard to navigate | Play the game/be part of the experience   |             |
-| 3        | User       | Preview a prompt/dialog | Understand how to approach the next level  |             |
-| 4        | User       | Choose from a selection of answers | Progress to the next level |             |
-| 5        | User       | Do X        | Achieve Y   |             |
+|   1        | User       | Have an interactive experience | Have fun while I learn more about a haunted escape | In Progress |
+| 2        | User  |  Use my mouse or keyboard to control the story | Play along and be part of the experience   | In Progress |
+| 3        | User       | Preview a prompt/dialog | Understand what to do next  | Done |
+| 4        | User       | Choose from a selection of answers | Control the way my story goes | Done |
+| 5        | User       | Click on a button that says, "buy tickets" |  Book tickets for the haunted experience   | IP |
+| 6        | User       | Toggle audio states |  Play audio when it's convenient for me   | Done |
 
 Features:
 
-**- Play:** Starts the game, by having the user click on a button that says, “play” located on the cover/start page (or section of the same page) to start the game.
+**Start:** Starts the story, by having the user click on a button that says, story located on the cover/start page (or section of the same page) to start the game.
 
 **- Game:** Allows the user to play the games, by clicking on one of two text-based prompts sent to take them through the interactive game experience.
 
 **“The End”:** Let’s the user know when they have finished their story, by directing them to one of (several) endings.
 
+## Technologies
+
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used to make this game responsive and visually appealing.
+
 ## Credits
 
-- s
+- [Code Institute](https://codeinstitute.net/)
+- [Hackathon](https://hackathon.codeinstitute.net/)
+- [Google Fonts](https://fonts.google.com/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [CSS Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) - The typewriter effect on index.html was learned from this article.
+- [CSS Scan](https://getcssscan.com/css-box-shadow-examples) box shadow styles were copied from CSS Scan.
+
