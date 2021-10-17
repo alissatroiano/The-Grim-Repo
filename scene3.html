@@ -84,9 +84,10 @@
                     <!-- <h2 class="story-scene-title">Awaken</h2>.    removed story title as replicates title above -->
                     <div class="story-detail">
                         <p id="S3-story-txt1" class="story-txt">
-                            The room is pitch black, I fumble for a light switch, it clicks but nothing happened.
+                            The room is pitch black, I fumble for a light switch, it clicks but nothing happens.
                             <br> Maybe I can use something to shine some light?
-                            <br> What ever I do I fear I'm going to need a way out of here and quick, I can something in the hallway getting closer!
+                            <br> What ever I do I fear I'm going to need a way out of here and quickly.... 
+                            <br>.....I can something in the hallway getting closer!
                         </p>
                     </div>
                 </div>
@@ -98,7 +99,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- Replace "img" with actual scene img required -->
-                    <div class="s3-main-img"></div>
+                    <div id="office-img" class="s3-main-img"></div>
                     <div id="s3-img-overlay"></div>
                     <button class="hidden1" data-bs-toggle="modal" data-bs-target="#Modal-cupboard"></button> <!--cupboard-->
                     <button class="hidden2" data-bs-toggle="modal" data-bs-target="#Modal-bin"></button> <!--bin-->
@@ -124,26 +125,10 @@
         </div>
 
                
-        <!-- Options Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Options</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        replace this with actual options and style to fit theme....
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Modals -->
 
         <div class="modal fade" id="Modal-office" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Options</h5>
@@ -161,14 +146,14 @@
         </div>
 
         <div class="modal fade" id="Modal-cupboard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Cupboard</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        There's a few old books in here with some pretty grim titles [Dead Coder by K Hughes] and [The Dead-Weight Lifter by AOB]. You go to lift a title [All I Know About CSS by J Morel] which is suprisingly light..... you hear a click and the cupboard starts to slide. It seems to be the entrance through a hidden door. 
+                        There's a few old books in here with some pretty grim titles [Dead Coder by K Hughes] and [The Dead-Weight Lifter by AOB]. You go to lift a title [All I Know About CSS by J Morel] which is surprisingly light..... you hear a click and the cupboard starts to slide. It seems to be the entrance through a hidden door. 
                         <!-- Need to add link here to the next scene-->
                         <button href="">Click to proceed</button>
                     </div>
@@ -180,14 +165,14 @@
         </div>
 
         <div class="modal fade" id="Modal-bin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Bin</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Really, you're going for the bin?!...... There's nothing here except a print out of a Haloween Hackathon assessment...... oh, so team [REDACTED] didn;t doo very well then?!..... it means nothing yo you better keep looking!
+                        Really, you're going for the bin?!...... There's nothing here except a print out of a Halloween Hackathon assessment...... oh, so team [REDACTED] didn't do very well then?!..... it means nothing to you, better keep looking!
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -197,7 +182,7 @@
         </div>
 
         <div class="modal fade" id="Modal-seat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Seat</h5>
@@ -214,7 +199,7 @@
         </div>
 
         <div class="modal fade" id="Modal-desk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Desk</h5>
@@ -231,7 +216,7 @@
         </div>
 
         <div class="modal fade" id="Modal-floor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Floor</h5>
