@@ -171,21 +171,27 @@ p {
     margin: 2rem auto;
 }
 
-/* #404-image {
-    height: 400px;
+.image-404 {
+    height: 100vh;
     width: 100%;
-    overflow: hidden;
-    background: url('../images/pumpkins.jpeg') no-repeat center center;
-} */
-
-.404-image {
-    height: 400px;
-    width: 100%;
+    align-items: center;
     overflow: hidden;
     background: url('../images/pumpkins.jpeg') no-repeat center center;
     background-size: cover;
 }
 
+.row p {
+    color: #e64b18;
+    text-align: center;
+    position:relative;
+    font-size: large;
+    font:large
+    font: bold;
+}
+
+#home-link {
+    color:#e64b18;
+}
 
 .user-interaction-buttons {
     display: flex;
