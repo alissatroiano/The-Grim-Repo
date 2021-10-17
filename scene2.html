@@ -18,14 +18,8 @@
     <!-- Project Custom CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Font-Awesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/6abe4f8110.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Replace {name} with name of scene -->
-    <title>Spooky Escape - Hallway Scene</title>
+    <title>Spooky Escape - The Hallway</title>
   </head>
 
   <body>
@@ -76,7 +70,7 @@
               </g>
             </g>
           </svg>
-          <a href="index.html">
+          <a href="#">
             <h1 class="brand-name">Horror Escape</h1>
           </a>
         </div>
@@ -84,19 +78,21 @@
           <h2 class="scene-title">The Hallway</h2>
         </div>
         <div class="col-sm-12 col-lg-4">
-          <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-img"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+          <!--Toggle Audio Button-->
+          <!-- Uncomment audio element, and add id/source.
+                    id should be "audio#", where # is a number...in case of scene 1 for example
+                    the id is "audio1". -->
+          <audio
+            id="audio1"
+            src="assets/audio/Hallway.mp3"
+            preload="auto"
+          ></audio>
+          <a
+            class="btn active btn-audio"
+            aria-pressed="true"
+            onClick="togglePlay()"
+            >Toggle Audio</a
           >
-            <img
-              class="img-fluid nav-modal-img"
-              src="assets/images/scroll.png"
-              alt="Scroll Image to Launch Modal"
-            />
-          </button>
         </div>
       </div>
     </div>
@@ -105,33 +101,22 @@
     <div class="container story-container">
       <div class="row">
         <div class="col-12 text-center">
-          <!-- Replace "scene" with actual scene name -->
-          <h2 class="story-scene-title">The Hallway</h2>
-          <p>
-            I'm suddenly finding myself in the asylum hallways. This place is
-            dirty and overtaken with moulds.
-          </p>
-
-          <p>
-            It looks like it has been a long time since anybody has roamed these
-            halls.
-          </p>
-
-          <p>
-            Each path before me lead to darkness. I'm not sure what time it is,
-            neither am I sure, of where to go.
-          </p>
-
-          <p>
-            I feel a presence nearby... I can hear someone's footsteps... It's
-            getting louder, closer. They're headed towards me.
-          </p>
-
-          <p>
-            In another direction, towards the dark end of the hall, there is a
-            door...
-          </p>
-          <p>What do I do? Where should I go?</p>
+          <div class="story-detail">
+            <p id="story-txt1" class="story-txt scene2">
+              I'm suddenly finding myself in the asylum hallways. This place is
+              dirty and overtaken with moulds. It looks like it has been a long
+              time since anybody has roamed these halls. Each path before me
+              lead to darkness. I'm not sure what time it is, neither am I sure,
+              of where to go. I feel a presence nearby...
+            </p>
+            <p id="story-txt2" class="story-txt scene2">
+              I can hear someone's footsteps... It's getting louder, closer.
+              They're headed towards me. In another direction, towards the dark
+              end of the hall, there is a door...
+              <br />
+              What do I do? Where should I go?
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -141,7 +126,7 @@
       <div class="row">
         <div class="col-12 text-center">
           <!-- Replace "img" with actual scene img required -->
-          <div class="main-scene-image"></div>
+          <div class="s2-main-img"></div>
         </div>
       </div>
     </div>
@@ -150,19 +135,24 @@
     <div class="container user-interactions-container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="user-interaction-title">Your Options</h2>
+          <h2 class="user-interaction-title">Reader's Options</h2>
           <div
             class="btn-group user-interaction-buttons"
             role="group"
             aria-label="Basic example"
           >
-            <button type="button" class="btn btn-primary">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#Modal-Die"
+            >
               <span class="fs-4"> Head towards the footsteps </span>
             </button>
-            <button type="button" class="btn btn-info">
+            <button type="button" class="btn btn-info" onclick="Scene2_Extra()">
               <span class="fs-4"> Continue into the dark </span>
             </button>
-            <button type="button" class="btn btn-warning">
+            <button type="button" class="btn btn-warning" onclick="Scene3()">
               <span class="fs-4"> Enter the nearest room </span>
             </button>
           </div>
@@ -173,7 +163,7 @@
     <!-- Options Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="Modal-Die"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -181,7 +171,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Options</h5>
+            <h5 class="modal-title" id="exampleModalLabel">
+              Head towards the footsteps and face your pursuer
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -190,22 +182,19 @@
             ></button>
           </div>
           <div class="modal-body">
-            <button
-              id="Audio"
-              class="border-0 shadow rounded-pill p-3 bg-light"
-              onclick="playAudio()"
-            >
-              <i class="fas fa-volume-up fa-lg"> Play Audio</i>
-            </button>
+            You face the mysterious figure that has been following you. The
+            figure is dark and significantly tall. The figure reaches out to
+            your neck and holds you up strangling you with its grip. You groan
+            and fight back in panic however, the dark figure begins to chant in
+            a strange language. It's chants grow louder and fiercer. Your vision
+            begins to blur and you begin to become dizzy. Everything goes
+            black...
+            <!-- need to add link here to next scene -->
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <a class="rounded-pill bg-secondary p-2 text-light" href="end.html">
+              You Died
+            </a>
           </div>
         </div>
       </div>
@@ -220,6 +209,5 @@
     ></script>
     <!-- Project Custom JS Link -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/scene2.js"></script>
   </body>
 </html>

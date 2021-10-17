@@ -23,3 +23,17 @@ audio1.onplaying = function () {
 audio1.onpause = function () {
   isPlaying = false
 }
+
+/* Start Button */
+function startButton() {
+  window.open('scene1.html')
+}
+
+// Scene 2 Routes
+function Scene3() {
+  window.location.replace('scene3.html')
+}
+
+function Scene2_Extra() {
+  window.location.replace('scene2-extra.html')
+}
