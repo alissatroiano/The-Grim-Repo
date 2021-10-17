@@ -17,8 +17,8 @@
     --t-color: #602749;
     --l-color: #e6e2b3;
 
-    --cursorX: 50vw;
-    --cursorY: 50vh;
+    --cursorX: 5vw;
+    --cursorY: 5vh;
 }
 
 .large-text {
@@ -479,10 +479,10 @@ p#openingscene {
     height: 40vh;
     position: fixed;
     background: radial-gradient(
-      circle 5vmax at var(--cursorX) var(--cursorY),
+      circle 5vmax at calc(var(--cursorX)) calc(var(--cursorY)),
       rgba(0,0,0,0) 0%,
-      rgba(0,0,0,.5) 80%,
-      rgba(0,0,0,.95) 100%
+      rgba(0,0,0,0.5) 80%,
+      rgba(0,0,0,0.95) 100%
     )
 }
 
