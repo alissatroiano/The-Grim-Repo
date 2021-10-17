@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=IM+Fell+English+SC&family=Josefin+Sans&family=Oswald&family=Raleway&family=Sancreek&display=swap');
-
 /* Root variables & imports */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Goudy+Bookletter+1911&display=swap');
 
@@ -154,7 +152,7 @@ p {
     border-radius: 1rem;
     min-height: 20rem;
     margin: 2rem auto;
-    background-color:--p-color;
+    background-color: var(--p-color);
 }
 
 .main-scene-image {
@@ -173,12 +171,21 @@ p {
     margin: 2rem auto;
 }
 
-#404-image {
-    height: 4000px;
+/* #404-image {
+    height: 400px;
     width: 100%;
     overflow: hidden;
     background: url('../images/pumpkins.jpeg') no-repeat center center;
+} */
+
+.404-image {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background: url('../images/pumpkins.jpeg') no-repeat center center;
+    background-size: cover;
 }
+
 
 .user-interaction-buttons {
     display: flex;
