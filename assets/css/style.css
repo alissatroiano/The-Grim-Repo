@@ -320,9 +320,15 @@ button#start {
     animation: mainImgFadeIn 8s;
 }
 
-/* Scene 1 */
+/* Scene 2 */
 .s2-main-img {
     background-image: url("/assets/images/hallways.jpeg");
+    background-position: 0 50%;
+}
+
+.s2-main-img.extra {
+    background-image: url("/assets/images/ritual.jpeg");
+    background-position: 0 70%;
 }
 
 @keyframes mainImgFadeIn {
