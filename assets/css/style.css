@@ -16,6 +16,7 @@
     --s-color: #e64b18;
     --t-color: #602749;
     --l-color: #e6e2b3;
+    --d-color: #1a1616;
 }
 
 .large-text {
@@ -32,7 +33,7 @@
 }
 
 body {
-    background-color: var(--p-color);
+    background-color: var(--d-color);
 }
 
 a {
@@ -44,6 +45,10 @@ p {
     font-size: 2rem;
     color: var(--p-color);
     font-family: var(--content-text);
+}
+
+.text-light {
+    color: var(--l-color);
 }
 
 
@@ -132,13 +137,6 @@ p {
     margin: 2rem auto;
 }
 
-.story-container {
-    background: url("../images/scroll-expanded.png") content-box no-repeat center center;
-    background-size: contain;
-    min-height: 20rem;
-    margin: 2rem auto;
-}
-
 .story-scene-title, .user-interaction-title {
     font-family: var(--header-text);
     color: var(--s-color);
@@ -159,7 +157,6 @@ p {
     border-radius: 1rem;
     min-height: 20rem;
     margin: 2rem auto;
-    background-color:--p-color;
 }
 
 .main-scene-image {
@@ -309,7 +306,6 @@ button#start {
 /* Scene 1 */
 .s1-main-img,
 .s2-main-img {
-    background-image: url("/assets/images/beds.jpg");
     background-size: cover;
     background-position: 0 70%;
     object-fit: contain;
@@ -322,12 +318,10 @@ button#start {
 
 /* Scene 2 */
 .s2-main-img {
-    background-image: url("/assets/images/hallways.jpeg");
     background-position: 0 50%;
 }
 
 .s2-main-img.extra {
-    background-image: url("/assets/images/ritual.jpeg");
     background-position: 0 70%;
 }
 
@@ -372,10 +366,10 @@ button#start {
     top: 5vh;
 }
 
-#story-txt1.scene2,
+/* #story-txt1.scene2,
 #story-txt2.scene2 {
     top: 7vh;
-}
+} */
 
 
 @keyframes textFadeInOut {

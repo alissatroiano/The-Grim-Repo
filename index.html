@@ -26,21 +26,26 @@
 				<h1 class="text-xs-small text-md-lg" id="reveal">Spooky Escape...</h1>
 				<p class="my-5" id="openingscene">Welcome to your digital nightmare!
 				<br>If you're wondering why you're here, you must be in the right place!
-				<br>Follow the prompts, make the right choices and see if you can escape!</p> 
+				<br>Follow the prompts, make the right choices and see if you can escape!</p>
 				</div>
 				<!--./end-animation-->
-		</div>
-	</div>
-	<div class="row text-center">
-		<div class="col-12">
-				<a class="my-5" href="#" role="button">
-					<button class="btn btn-lg text-light my-3" id="start" onclick="startButton()"><h2>START</h2></button>
-					</a>
-				<p class="my-5" id="caption">
+			</div>
+			<div class="col-12">
+				<a class="my-5" href="scene1.html" role="button">
+					<button class="btn btn-lg text-light my-3" id="start"><h2>START</h2></button>
+				</a>
+				<p class="my-5 text-light" id="caption">
 					<em>For the scariest of experiences, please wear headphones, dim the lights and DO NOT SCREAM...</em>
 					<br>
 					<em>...and, most importantly, don't forget your flashlight!</em>
 				</p>
+				<p class="my-5 text-light" id="caption">
+					<em>Please enable audio per page by clicking on </em>
+					<!--Toggle Audio Button-->
+					<audio id="audio" preload="auto"></audio>
+					<a class="btn active btn-audio" aria-pressed="true" onClick="togglePlay()">Toggle Audio</a>
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
