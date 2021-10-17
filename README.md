@@ -10,7 +10,7 @@ Spooky Escape is an online spooky story experience, that challenges users to mak
 
 **User Stories**:
 
-User Stories were created during the development phase of this project to help the developers plan out features and begin the wireframing process.
+User Stories were created during the development phase of this project to help the developers plan out features and create wireframes.
 
 | ID #       | As A/An... | I wan't to be able to... | So that I can... | Status |
 | ----------- | ----------- | ----------- | ----------- | ----------- | 
@@ -18,7 +18,7 @@ User Stories were created during the development phase of this project to help t
 | 2        | User  |  Use my mouse or keyboard to navigate | Play the game/be part of the experience   |             |
 | 3        | User       | Preview a prompt/dialog | Understand how to approach the next level  |             |
 | 4        | User       | Choose from a selection of answers | Progress to the next level |             |
-| 5        | User       | Do X        | Achieve Y   |             |
+| 5        | User       | View my results/status at the end of the game |  Understand how my custom experience ends   |             |
 
 Features:
 
@@ -28,6 +28,14 @@ Features:
 
 **“The End”:** Let’s the user know when they have finished their story, by directing them to one of (several) endings.
 
+## Technologies
+
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used to make this game responsive and visually appealing.
+
 ## Credits
 
-- s
+- [Code Institute](https://codeinstitute.net/)
+- [Hackathon](https://hackathon.codeinstitute.net/)
+- [Google Fonts](https://fonts.google.com/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [CSS Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) - The typewriter effect on index.html was learned from this article.

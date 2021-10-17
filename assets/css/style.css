@@ -1,0 +1,332 @@
+/* Root variables & imports */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Goudy+Bookletter+1911&display=swap');
+
+:root {
+    /* 1rem = 10px
+    This allows for greater control of calculating font sizes */
+    font-size: 62.5%;
+
+    /* Typography */
+    --header-text: 'EB Garamond', sans-serif;
+    --content-text: 'Goudy Bookletter 1911', serif;
+
+    /* Colors */
+    /* Replace and add to below with actual project color theme */
+    --p-color: #190225;
+    --s-color: #e64b18;
+    --t-color: #602749;
+    --l-color: #e6e2b3;
+}
+
+.large-text {
+    font-size: 2rem;
+}
+
+/* Globals */
+/* Should contain common components used throughout project */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--p-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .opacity-dark {
+    opacity: 50%;
+} */
+
+/* Navigation */
+.scene-nav {
+    padding: 3rem 0;
+}
+
+.scene-nav .row {
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-ghost {
+    height: 10%;
+    width: 10%;
+    fill: var(--l-color);
+    opacity: 0;
+}
+
+.brand:hover > #nav-ghost {
+    animation: 3s ease-in-out infinite fadeLeft;
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+}
+
+.brand-name {
+    font-family: var(--header-text);
+    color: var(--l-color);
+}
+
+.scene-title {
+    font-family: var(--content-text);
+    color: var(--l-color);
+}
+
+.nav-modal-img {
+    width: 15%;
+}
+
+.btn-img {
+    display: contents;
+    align-items: center;
+}
+
+.utility {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-audio {
+    display: inline-block;
+    align-items: center;
+    font-family: var(--content-text);
+    color: var(--l-color);
+    background-color:var(--s-color);
+    font-size:1.5rem;
+    float:right;
+    margin-right:10px;
+}
+
+/* Scene template ~~ delete before submission ~~ */
+.story-container {
+    border: 1px solid var(--s-color);
+    border-radius: 1rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+}
+
+.story-scene-title, .user-interaction-title {
+    font-family: var(--header-text);
+    color: var(--s-color);
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.story-detail {
+    font-family: var(--content-text);
+    color: var(--t-color);
+    margin: 1rem;
+    position:relative;     /* Kelv - added to enable positioing of text fades in / out of same location */
+}
+
+.main-scene-container {
+    border: 1px solid var(--s-color);
+    border-radius: 1rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+    background-color:--p-color;
+}
+
+.main-scene-image {
+    background: url("../images/hallways.jpeg") no-repeat center center;
+    background-size: cover;
+    object-fit: contain;
+    height: 40vh;
+    min-height: 100%;
+    max-height: none;
+}
+
+.user-interactions-container {
+    border: 1px solid var(--s-color);
+    border-radius: 1rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+}
+
+.user-interaction-buttons {
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    margin-top: 4rem;
+    font-size:5rem;
+}
+
+/* Main */
+.container-fluid.jumbotron {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/bg.jpg") no-repeat center center fixed;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    overflow: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1#reveal {
+    margin-top: 150px;
+    font-family: var(--header-text);
+    color: var(--s-color);
+    font-size: 8rem;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+
+/* Fade in animation for header */
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End fade in animation for header */
+
+/* Fade in animation for opening */
+p#openingscene {
+    font-family: var(--content-text);
+    color: #fafafa;
+    font-size: 2rem;
+    animation: fadein 15s;
+    -moz-animation: fadein 15s; /* Firefox */
+    -webkit-animation: fadein 15s; /* Safari and Chrome */
+    -o-animation: fadein 15s; /* Opera */
+}
+
+/* Fade in animation for opening */
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End fade in animation for opening */
+
+
+#caption {
+    font-size: 1.5rem;
+
+}
+p {
+    /* Remove this when applicable, just for testing */
+    font-size: 2rem;
+    color: var(--s-color);
+    font-family: var(--content-text);
+}
+
+
+/* Scene 1 */
+.s1-main-img {
+    background-image: url("/assets/images/beds.jpg");
+    background-size: cover;
+    background-position: 0 70%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+    min-height: 100%;
+    max-height: none;
+    animation: mainImgFadeIn 8s;
+}
+
+@keyframes mainImgFadeIn {
+    0% {opacity: 0%;}
+    10% {opacity: 0%;}
+    60% {opacity: 10%;}
+    100% {opacity:100%;} 
+}
+
+
+.story-txt {
+    animation: textFadeInOut 20s;  
+    visibility:hidden;
+    text-align: center;
+    width: 100%; 
+}
+
+#S1-story-txt1 {
+    animation-delay:5s;
+    position: absolute;
+    top:5vh;
+}
+
+#S1-story-txt2 {
+    animation-delay:20s;
+    position: absolute;
+    top:5vh;
+}
+
+
+@keyframes textFadeInOut {
+    0% {visibility: hidden; opacity: 0%;}
+    20% {visibility: visible; opacity:1%;}
+    40% {visibility: visible; opacity:80%;}
+    80% {visibility: visible; opacity:80%;}
+    100% {visibility: hidden; opacity:0%; display: none} /*-- display none added in final sequence to reove the element from the DOM so as the next text box appears in same location --*/
+}
+
