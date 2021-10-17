@@ -37,3 +37,10 @@ function Scene3() {
 function Scene2_Extra() {
   window.location.replace('scene2-extra.html')
 }
+
+function takeToken() {
+  localStorage.setItem(
+    'tokenSymbol',
+    document.getElementById('tokenSymbol').value
+  )
+}
