@@ -18,6 +18,12 @@
     <!-- Project Custom CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- Font-Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/6abe4f8110.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Replace {name} with name of scene -->
     <title>Spooky Escape - Hallway Scene</title>
   </head>
@@ -101,31 +107,31 @@
         <div class="col-12 text-center">
           <!-- Replace "scene" with actual scene name -->
           <h2 class="story-scene-title">The Hallway</h2>
-          <p class="story-detail">
+          <p>
             I'm suddenly finding myself in the asylum hallways. This place is
             dirty and overtaken with moulds.
           </p>
 
-          <p class="story-detail">
+          <p>
             It looks like it has been a long time since anybody has roamed these
             halls.
           </p>
 
-          <p class="story-detail">
+          <p>
             Each path before me lead to darkness. I'm not sure what time it is,
             neither am I sure, of where to go.
           </p>
 
-          <p class="story-detail">
+          <p>
             I feel a presence nearby... I can hear someone's footsteps... It's
             getting louder, closer. They're headed towards me.
           </p>
 
-          <p class="story-detail">
+          <p>
             In another direction, towards the dark end of the hall, there is a
             door...
           </p>
-          <p class="story-detail">What do I do? Where should I go?</p>
+          <p>What do I do? Where should I go?</p>
         </div>
       </div>
     </div>
@@ -184,7 +190,13 @@
             ></button>
           </div>
           <div class="modal-body">
-            <button onclick="playAudio()">Play Audio</button>
+            <button
+              id="Audio"
+              class="border-0 shadow rounded-pill p-3 bg-light"
+              onclick="playAudio()"
+            >
+              <i class="fas fa-volume-up fa-lg"> Play Audio</i>
+            </button>
           </div>
           <div class="modal-footer">
             <button
