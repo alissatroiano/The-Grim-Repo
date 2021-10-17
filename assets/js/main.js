@@ -20,15 +20,15 @@ switch(current_page) {
       break;
   case '/scene1.html':
       audio.setAttribute('src', 'assets/audio/Scene1_background_audio.m4a');
-      main_image.style.backgroundImage = "url(/assets/images/beds.jpg)"
+      main_image.style.backgroundImage = "url(/assets/images/beds.jpg)";
       break;
   case '/scene2.html':
       audio.setAttribute('src', 'assets/audio/Hallway.mp3');
-      main_image.style.backgroundImage = "url(/assets/images/hallways.jpeg)"
+      main_image.style.backgroundImage = "url(/assets/images/hallways.jpeg)";
       break;
   case '/scene2-extra.html':
       audio.setAttribute('src', 'assets/audio/Ritual.mp3');
-      main_image.style.backgroundImage = "url(/assets/images/ritual.jpeg)"
+      main_image.style.backgroundImage = "url(/assets/images/ritual.jpeg)";
       break;
   default:
       break;
