@@ -96,7 +96,13 @@ a {
 }
 
 .btn-img {
-    display: inline-block;
+    display: contents;
+    align-items: center;
+}
+
+.utility {
+    display:flex;
+    justify-content: space-between;
     align-items: center;
 }
 
