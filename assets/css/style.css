@@ -404,8 +404,8 @@ p#openingscene {
 
 /*- cupboard -*/
 .hidden1 {
-    border:solid 5px red;
-    /*-border: none;-*/
+    /*border:solid 5px red;-*/
+    border: none;
     background-color:rgba(0, 0, 0, 0);
     width:10%;
     height:30%;
@@ -420,7 +420,8 @@ p#openingscene {
 
 /*- bin -*/
 .hidden2 {
-    border:solid 5px blue;
+    /*-border:solid 5px blue;-*/
+    border: none;
     background-color:rgba(0, 0, 0, 0);
     width:10%;
     height:20%;
@@ -434,8 +435,8 @@ p#openingscene {
 
 /*- chair -*/
 .hidden3 {
-    border:solid 5px green;
-   
+    /*-border:solid 5px green;-*/
+    border: none;
     background-color:rgba(0, 0, 0, 0);
     width:8%;
     height:20%;
@@ -449,8 +450,8 @@ p#openingscene {
 
 /*- desk -*/
 .hidden4 {
-    border:solid 5px yellow;
-
+    /*-border:solid 5px yellow;-*/
+    border: none;
     background-color:rgba(0, 0, 0, 0);
     width:20%;
     height:20%;
@@ -464,8 +465,8 @@ p#openingscene {
 
 /*- floor -*/
 .hidden5 {
-    border:solid 5px blueviolet;
-    
+    /*-border:solid 5px blueviolet;-*/
+    border: none;
     background-color:rgba(0, 0, 0, 0);
     width:25%;
     height:20%;
