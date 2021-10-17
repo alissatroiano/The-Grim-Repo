@@ -143,16 +143,20 @@
           >
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn options"
               data-bs-toggle="modal"
               data-bs-target="#Modal-Die"
             >
               <span class="fs-3"> Head towards the footsteps </span>
             </button>
-            <button type="button" class="btn btn-info" onclick="Scene2_Extra()">
-              <span class="fs-3"> Continue into the dark </span>
+            <button
+              type="button"
+              class="btn options mx-5"
+              onclick="Scene2_Extra()"
+            >
+              <span class="fs-3"> Continue towards the door </span>
             </button>
-            <button type="button" class="btn btn-warning" onclick="Scene3()">
+            <button type="button" class="btn options" onclick="Scene3()">
               <span class="fs-3"> Enter the nearest room </span>
             </button>
           </div>
@@ -190,11 +194,14 @@
             figure begins to chant in a strange language.
             <br />
             It's chants grow louder and fiercer. Your vision begins to blur and
-            you begin to become dizzy. Everything goes black...
+            you begin to become dizzy. Everything goes black... You are dying.
             <!-- need to add link here to next scene -->
           </div>
           <div class="modal-footer">
-            <a class="rounded-pill bg-dark p-2 text-light" href="end.html">
+            <a
+              class="rounded-pill bg-dark p-3 text-light fs-5"
+              href="index.html"
+            >
               You Died
             </a>
           </div>

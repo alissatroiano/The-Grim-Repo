@@ -145,7 +145,7 @@
           >
             <button
               type="button"
-              class="btn btn-primary"
+              class="btn options"
               data-bs-toggle="modal"
               data-bs-target="#Modal-Die"
             >
@@ -153,13 +153,13 @@
             </button>
             <button
               type="button"
-              class="btn btn-info"
+              class="btn options mx-5"
               data-bs-toggle="modal"
               data-bs-target="#Modal-Check"
             >
               <span class="fs-3"> Check symbol on the door </span>
             </button>
-            <button type="button" class="btn btn-warning" onclick="Scene3()">
+            <button type="button" class="btn options" onclick="Scene3()">
               <span class="fs-3"> Enter the previous room</span>
             </button>
           </div>
@@ -181,12 +181,6 @@
             <h5 class="modal-title" id="exampleModalLabel">
               You head towards the footsteps and face your pursuer...
             </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
           </div>
           <div class="modal-body">
             You face the mysterious figure that has been following you. The
@@ -201,7 +195,10 @@
             <!-- need to add link here to next scene -->
           </div>
           <div class="modal-footer">
-            <a class="rounded-pill bg-dark p-2 text-light" href="end.html">
+            <a
+              class="rounded-pill bg-dark p-3 text-light fs-5"
+              href="index.html"
+            >
               You Died
             </a>
           </div>
@@ -235,16 +232,19 @@
             ritual. How many were sacrificed? Are there others who survived? You
             remember fire, a chanting for darkness, for evil. It summons a
             being... Their chants grow louder and fiercer. Your vision begins to
-            blur and you begin to become dizzy. Everything goes to black...
-            <!-- need to add link here to next scene -->
+            blur and you begin to become dizzy. You remember everything going
+            black...
           </div>
           <div class="modal-footer">
             <button
               type="button"
               class="btn rounded-pill btn-secondary"
+              id="tokenSymbol"
+              value="Symbol"
               data-bs-dismiss="modal"
+              onclick="takeToken()"
             >
-              Close
+              Take Symbol
             </button>
           </div>
         </div>
