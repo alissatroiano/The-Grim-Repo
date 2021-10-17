@@ -23,3 +23,8 @@ audio1.onplaying = function() {
 audio1.onpause = function() {
   isPlaying = false;
 };
+
+/* Start Button */
+function startButton() {
+  window.open("scene1.html");
+}
