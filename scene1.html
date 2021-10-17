@@ -69,6 +69,9 @@
                         <img class="img-fluid nav-modal-img" src="assets/images/scroll.png"
                             alt="Scroll Image to Launch Modal">
                     </button>
+                    <!--Toggle Audio Button-->
+                    <audio id="audio1" src="./assets/audio/Scene1_background_audio.m4a" preload="auto"></audio>
+                    <a class="btn active btn-audio" aria-pressed="true" onClick="togglePlay()">Toggle Audio</a>
                 </div>
             </div>
         </div>
@@ -111,19 +114,15 @@
                 <div class="col-12 text-center">
                     <h2 class="user-interaction-title">Reader's Options</h2>
                     <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-leave">Search the room for clues</button>
-                        <button type="button" class="btn btn-info">Call for help!</button>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Modal-pockets">Check pockets</button>
+                        <button type="button" class="btn btn-primary large-text" data-bs-toggle="modal" data-bs-target="#Modal-leave">Search the room for clues</button>
+                        <button type="button" class="btn btn-info large-text">Call for help!</button>
+                        <button type="button" class="btn btn-warning large-text" data-bs-toggle="modal" data-bs-target="#Modal-pockets">Check pockets</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Play Audio --->
-        <audio controls autoplay>
-            <source src="./assets/audio/Scene1_background_audio.m4a" type="audio/mp3">
-        </audio>
-        
+               
         <!-- Options Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
