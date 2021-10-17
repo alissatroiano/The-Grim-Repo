@@ -132,6 +132,13 @@ p {
     margin: 2rem auto;
 }
 
+.story-container {
+    background: url("../images/scroll-expanded.png") content-box no-repeat center center;
+    background-size: contain;
+    min-height: 20rem;
+    margin: 2rem auto;
+}
+
 .story-scene-title, .user-interaction-title {
     font-family: var(--header-text);
     color: var(--s-color);
@@ -156,7 +163,7 @@ p {
 }
 
 .main-scene-image {
-    background: url("../images/pexels-felipe-hueb-2747893.jpg") no-repeat center center;
+    background: url("../images/hallways.jpeg") no-repeat center center;
     background-size: cover;
     object-fit: contain;
     height: 40vh;
@@ -300,7 +307,8 @@ button#start {
 }
 
 /* Scene 1 */
-.s1-main-img {
+.s1-main-img,
+.s2-main-img {
     background-image: url("/assets/images/beds.jpg");
     background-size: cover;
     background-position: 0 70%;
@@ -310,6 +318,17 @@ button#start {
     min-height: 100%;
     max-height: none;
     animation: mainImgFadeIn 8s;
+}
+
+/* Scene 2 */
+.s2-main-img {
+    background-image: url("/assets/images/hallways.jpeg");
+    background-position: 0 50%;
+}
+
+.s2-main-img.extra {
+    background-image: url("/assets/images/ritual.jpeg");
+    background-position: 0 70%;
 }
 
 @keyframes mainImgFadeIn {
@@ -336,8 +355,13 @@ button#start {
     width: 100%; 
 }
 
+.story-txt.scene2 {
+    animation: textFadeInOut 15s;    
+}
+
+
 #story-txt1 {
-    animation-delay: 5s;
+    animation-delay: 3s;
     position: absolute;
     top: 5vh;
 }
@@ -346,6 +370,11 @@ button#start {
     animation-delay: 20s;
     position: absolute;
     top: 5vh;
+}
+
+#story-txt1.scene2,
+#story-txt2.scene2 {
+    top: 7vh;
 }
 
 
