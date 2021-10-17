@@ -156,10 +156,10 @@ p {
 }
 
 .main-scene-image {
-    background: url("../images/PP-3.jpg") no-repeat center center;
+    background: url("../images/PP-2.jpg") no-repeat center center;
     background-size: cover;
     object-fit: contain;
-    height: 40vh;
+    height: 30vh;
     min-height: 100%;
     max-height: none;
 }
