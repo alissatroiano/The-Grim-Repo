@@ -18,6 +18,10 @@
     --l-color: #e6e2b3;
 }
 
+.large-text {
+    font-size: 2rem;
+}
+
 /* Globals */
 /* Should contain common components used throughout project */
 
@@ -28,6 +32,7 @@
 }
 
 body {
+    background-color: var(--p-color);
 }
 
 a {
@@ -90,6 +95,28 @@ a {
     width: 15%;
 }
 
+.btn-img {
+    display: contents;
+    align-items: center;
+}
+
+.utility {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-audio {
+    display: inline-block;
+    align-items: center;
+    font-family: var(--content-text);
+    color: var(--l-color);
+    background-color:var(--s-color);
+    font-size:1.5rem;
+    float:right;
+    margin-right:10px;
+}
+
 /* Scene template ~~ delete before submission ~~ */
 .story-container {
     border: 1px solid var(--s-color);
@@ -141,6 +168,7 @@ a {
     justify-content: space-around;
     height: 5rem;
     margin-top: 4rem;
+    font-size:5rem;
 }
 
 /* Main */
