@@ -39,3 +39,11 @@ p {
     font-size: 2rem;
     color: var(--s-color);
 }
+
+#404-image {
+    height: 4000px;
+    width: 100%;
+    overflow: hidden;
+    background: url('../images/pumpkins.jpeg') no-repeat center center;
+}
+
