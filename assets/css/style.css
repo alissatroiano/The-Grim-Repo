@@ -193,6 +193,11 @@ p {
     color:#e64b18;
 }
 
+animation: fadein 5s;
+-moz-animation: fadein 5s; /* Firefox */
+-webkit-animation: fadein 5s; /* Safari and Chrome */
+-o-animation: fadein 5s; /* Opera */
+
 .user-interaction-buttons {
     display: flex;
     justify-content: space-around;
