@@ -30,6 +30,10 @@ switch(current_page) {
       audio.setAttribute('src', 'assets/audio/Ritual.mp3');
       main_image.style.backgroundImage = "url(/assets/images/ritual.jpeg)";
       break;
+  case '/scene3.html':
+      audio.setAttribute('src', 'assets/audio/Scene3 - background-audio.m4a');
+      main_image.style.backgroundImage = "url(assets/images/office.jpeg)";
+        break;
   default:
       break;
 }
