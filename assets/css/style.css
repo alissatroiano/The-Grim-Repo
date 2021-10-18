@@ -163,12 +163,6 @@ p {
     color: var(--l-color);
 }
 
-.modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Navigation */
 .scene-nav {
   padding: 3rem 0;
@@ -478,7 +472,7 @@ animation: mainImgFadeIn 8s;
   visibility: hidden;
   text-align: center;
   width: 100%;
-  top: 3vh;
+  top: 5vh;
   position: absolute;
 }
 
