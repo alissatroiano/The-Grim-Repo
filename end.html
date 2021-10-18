@@ -73,13 +73,10 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-lg-4">
-                    <h2 class="scene-title">You have survived</h2>
+                    <h2 class="scene-title">Did you survive?</h2>
                 </div>
                 <div class="col-sm-12 col-lg-4">
                     <!--Toggle Audio Button-->
-                    <!-- Uncomment audio element, and add id/source.
-                    id should be "audio#", where # is a number...in case of scene 1 for example
-                    the id is "audio1". -->
                     <audio id="audio" preload="auto"></audio>
                     <a class="btn active btn-audio" aria-pressed="true" onClick="togglePlay()">Toggle Audio</a>
                     
@@ -128,14 +125,8 @@
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="user-interaction-title">Reader's Options</h2>
-          <div
-            class="btn-group user-interaction-buttons"
-            role="group"
-            aria-label="Basic example"
-          >
-            <button type="button" class="btn btn-primary">Option A</button>
-            <button type="button" class="btn btn-info">Option B</button>
-            <button type="button" class="btn btn-warning">Option C</button>
+          <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic example">
+            <button type="button" class="btn options" id="restart" onclick="restart()">Experience again</button>
           </div>
         </div>
       </div>
