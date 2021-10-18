@@ -41,4 +41,5 @@ Features:
 - [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 - [CSS Tricks](https://css-tricks.com/snippets/css/typewriter-effect/) - The typewriter effect on index.html was learned from this article.
 - [CSS Scan](https://getcssscan.com/css-box-shadow-examples) box shadow styles were copied from CSS Scan.
+- [CSS Buttons Glitch Effect](https://cssbuttons.io/detail/namecho/slippery-moth-23)
 
