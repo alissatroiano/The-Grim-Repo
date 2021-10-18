@@ -47,22 +47,6 @@ function replayContext() {
   Paragraph.classList.add('paragraph-position')
 }
 
-// Replay Context of Scene 2
-// function replayContext_SceneTwo() {
-//   let context = document.getElementById('Story-detail')
-//   let Paragraph = document.createElement('p')
-
-//   context.appendChild(Paragraph)
-
-//   Paragraph.innerText = `I can hear someone's footsteps... It's getting louder, closer.
-//               They're headed towards me. There's a sign on the wall. A relic? A
-//               symbol? What does it mean? A fragment of my memory returns to me -
-//               I remember... a ritual. I remember... prayer, laughter, pain. I
-//               was... sacrificed? Why am I here?`
-
-//   Paragraph.classList.add('paragraph-position')
-// }
-
 /* Start Button */
 function startButton() {
   window.open('scene1.html')
