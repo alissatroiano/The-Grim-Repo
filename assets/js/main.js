@@ -51,6 +51,8 @@ switch(current_page) {
 switch(current_page) {
   /**
    * For local testing only
+   * Possibly remove prior to submission
+   * if you read this...this isn't an easter egg 🥚🥚🥚
    */
   case '/':
       audio.setAttribute('src', 'assets/audio final/intro or outro/accompaniment epona-[AudioTrimmer.com]-extreme.mp3');
