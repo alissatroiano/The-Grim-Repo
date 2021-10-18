@@ -662,11 +662,11 @@ animation: mainImgFadeIn 8s;
 .torch:before {
     content: '';
     display: block;
-    width: 79%;
+    width: 100%;
     max-width:1320px;
     overflow-x:hidden;
     height: inherit;
-    position: fixed;
+    
     background: radial-gradient(
       circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
       rgba(0,0,0,0) 0%,
