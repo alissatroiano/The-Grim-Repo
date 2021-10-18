@@ -30,9 +30,9 @@ switch(current_page) {
   case '/scene2.html':
       audio.setAttribute('src', 'assets/audio/Hallway.mp3');
       if(local === '127.0.0.1' || local === 'localhost') {
-          main_image.style.backgroundImage = "url(assets/images/hallways.jpg)";
+          main_image.style.backgroundImage = "url(assets/images/hallways.jpeg)";
       } else {
-          main_image.style.backgroundImage = "url(../images/hallways.jpg)";
+          main_image.style.backgroundImage = "url(../images/hallways.jpeg)";
       }
       break;
   case '/scene2-extra.html':
