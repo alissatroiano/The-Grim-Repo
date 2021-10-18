@@ -22,6 +22,11 @@
   font-size: 2rem;
 }
 
+.paragraph-position {
+  position: absolute;
+  top: 7vh;
+}
+
 /* Button styling from: https://cssbuttons.io/detail/namecho/slippery-moth-23 */
 button.options,
 button.options::after {
