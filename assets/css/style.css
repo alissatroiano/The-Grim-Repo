@@ -269,6 +269,7 @@ p {
     border-radius: 1rem;
     min-height: 20rem;
     margin: 2rem auto;
+    position: relative;
 }
 
 .main-scene-image {
@@ -525,7 +526,8 @@ button#start {
     background-size: cover;
 }
 
-.row p {
+.bolder-text {
+    color: var(--s-color);
     text-align: center;
     position:relative;
     font-size: large;
