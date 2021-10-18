@@ -79,7 +79,7 @@ function replayContext() {
   Paragraph.classList.add('paragraph-position')
 }
 
-/* Start Button */
+// Start Button //
 function startButton() {
   window.open('scene1.html')
 }
