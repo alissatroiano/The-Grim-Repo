@@ -435,12 +435,16 @@ button#start {
     height: 40vh;
     min-height: 100%;
     max-height: none;
-    animation: mainImgFadeIn 8s;
+    
+}
+.s1-main-img {
+animation: mainImgFadeIn 8s;
 }
 
 /* Scene 2 */
 .s2-main-img {
     background-position: 0 50%;
+    animation: mainImgFadeIn 2s;
 }
 
 .s2-main-img.extra {
@@ -468,6 +472,8 @@ button#start {
   visibility: hidden;
   text-align: center;
   width: 100%;
+  top: 3vh;
+  position: absolute;
 }
 
 .story-txt.scene2 {
@@ -476,15 +482,20 @@ button#start {
 
 #story-txt1 {
   animation-delay: 3s;
-  position: absolute;
-  top: 5vh;
+  
 }
 
 #story-txt2 {
   animation-delay: 20s;
-  position: absolute;
-  top: 5vh;
 }
+
+#story-txt-3 {
+    animation-delay: 1s;
+}
+
+#story-txt4 {
+    animation-delay: 15s;
+  }
 
 /* #story-txt1.scene2,
 #story-txt2.scene2 {
@@ -539,10 +550,7 @@ button#start {
     color:#e64b18;
 }
 
-#S3-story-txt1 {
-    position: absolute;
-    top: 4vh;
-}
+
 
 .office-img-block {
     width: 80vw;
@@ -675,4 +683,25 @@ button#start {
 .hidden4:hover,
 .hidden5:hover {
       cursor: default;
+}
+
+/*- modal styles -*/
+
+.modal-content {
+    border-radius: 20px;
+    border: solid var(--s-color) 10px;
+    box-shadow: 6px 0px 0px #602749;
+    outline: transparent;
+}
+
+.modal-header, .modal-footer {
+    background-color: var(--s-color);
+    font-family:var(--header-text);
+    font-weight:bold;
+}
+
+.modal-body {
+    font-family:var(--content-text);
+    background-color: var(--l-color);
+    font-size: 1.5rem;
 }
