@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Goudy+Bookletter+1911&display=swap');
 
 :root {
-    /* 1rem = 10px
+  /* 1rem = 10px
     This allows for greater control of calculating font sizes */
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-    /* Typography */
-    --header-text: 'EB Garamond', sans-serif;
-    --content-text: 'Goudy Bookletter 1911', serif;
+  /* Typography */
+  --header-text: 'EB Garamond', sans-serif;
+  --content-text: 'Goudy Bookletter 1911', serif;
 
     /* Colors */
     /* Replace and add to below with actual project color theme */
@@ -17,19 +17,131 @@
     --t-color: #602749;
     --l-color: #e6e2b3;
     --d-color: #1a1616;
+
+    /*-cursor position - used to update tracking of torchlight --*/
+    --cursorX: 35vw;
+    --cursorY: 20vh;
+  
 }
 
 .large-text {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.paragraph-position {
+  position: absolute;
+  top: 7vh;
+}
+
+/* Button styling from: https://cssbuttons.io/detail/namecho/slippery-moth-23 */
+button.options,
+button.options::after {
+  padding: 16px 20px;
+  font-size: 18px;
+  background: linear-gradient(45deg, transparent 5%, #e64b18 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 1;
+  box-shadow: 6px 0px 0px #602749;
+  outline: transparent;
+  position: relative;
+}
+
+button.options::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: 'RUN AWAY';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #e6e2b3 3%,
+    #e6e2b3 5%,
+    #ff013c 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+button.options:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
 }
 
 /* Globals */
 /* Should contain common components used throughout project */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,104 +149,104 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    /* Remove this when applicable, just for testing */
-    font-size: 2rem;
-    color: var(--p-color);
-    font-family: var(--content-text);
+  /* Remove this when applicable, just for testing */
+  font-size: 2rem;
+  color: var(--p-color);
+  font-family: var(--content-text);
 }
 
 .text-light {
     color: var(--l-color);
 }
 
-
 /* Navigation */
 .scene-nav {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .scene-nav .row {
-    align-items: center;
+  align-items: center;
 }
 
 .brand {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #nav-ghost {
-    height: 10%;
-    width: 10%;
-    fill: var(--l-color);
-    opacity: 0;
+  height: 10%;
+  width: 10%;
+  fill: var(--l-color);
+  opacity: 0;
 }
 
 .brand:hover > #nav-ghost {
-    animation: 3s ease-in-out infinite fadeLeft;
+  animation: 3s ease-in-out infinite fadeLeft;
 }
 
 @keyframes fadeLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(1rem);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
 
-    50% {
-        opacity: 1;
-        transform: translateX(-1rem);
-    }
+  50% {
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
 
-    100% {
-        opacity: 0;
-        transform: translateX(1rem);
-    }
+  100% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
 }
 
 .brand-name {
-    font-family: var(--header-text);
-    color: var(--l-color);
+  font-family: var(--header-text);
+  color: var(--l-color);
 }
 
 .scene-title {
-    font-family: var(--content-text);
-    color: var(--l-color);
+  font-family: var(--content-text);
+  color: var(--l-color);
 }
 
 .nav-modal-img {
-    width: 15%;
+  width: 15%;
 }
 
 .btn-img {
-    display: contents;
-    align-items: center;
+  display: contents;
+  align-items: center;
 }
 
 .utility {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .btn-audio {
-    display: inline-block;
-    align-items: center;
-    font-family: var(--content-text);
-    color: var(--l-color);
-    background-color:var(--s-color);
-    font-size:1.5rem;
-    margin-right:10px;
+  display: inline-block;
+  align-items: center;
+  font-family: var(--content-text);
+  color: var(--l-color);
+  background-color: var(--s-color);
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 /* Scene template */
 .story-container {
-    background: url("../images/scroll-expanded.png") content-box no-repeat center center;
-    background-size: contain;
-    min-height: 20rem;
-    margin: 2rem auto;
+  background: url('../images/scroll-expanded.png') content-box no-repeat center
+    center;
+  background-size: contain;
+  min-height: 20rem;
+  margin: 2rem auto;
 }
 
 .story-scene-title, .user-interaction-title {
@@ -145,11 +257,11 @@ p {
 }
 
 .story-detail {
-    width: 70%;
-    font-family: var(--content-text);
-    margin: 1rem auto;
-    /* Kelv - added to enable positioing of text fades in / out of same location */
-    position: relative;
+  width: 70%;
+  font-family: var(--content-text);
+  margin: 1rem auto;
+  /* Kelv - added to enable positioing of text fades in / out of same location */
+  position: relative;
 }
 
 .main-scene-container {
@@ -160,147 +272,155 @@ p {
 }
 
 .main-scene-image {
-    background: url("../images/hallways.jpeg") no-repeat center center;
-    background-size: cover;
-    object-fit: contain;
-    height: 40vh;
-    min-height: 100%;
-    max-height: none;
+  background: url('../images/hallways.jpeg') no-repeat center center;
+  background-size: cover;
+  object-fit: contain;
+  height: 40vh;
+  min-height: 100%;
+  max-height: none;
 }
 
 .user-interactions-container {
-    border: 1px solid var(--s-color);
-    border-radius: 1rem;
-    min-height: 20rem;
-    margin: 2rem auto;
+  border: 1px solid var(--s-color);
+  border-radius: 1rem;
+  min-height: 20rem;
+  margin: 2rem auto;
 }
 
 .user-interaction-buttons {
-    display: flex;
-    justify-content: space-around;
-    height: 5rem;
-    margin-top: 4rem;
-    font-size:5rem;
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  margin-top: 4rem;
+  font-size: 5rem;
 }
 
 /* Main index.html */
 .container-fluid.jumbotron {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("../images/bg.jpg") no-repeat center center fixed;
-    min-height: 100vh;
-    width: 100%;
-    position: fixed;
-    overflow: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url('../images/bg.jpg') no-repeat center center fixed;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  overflow: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1#reveal {
-    margin-top: 150px;
-    font-family: var(--header-text);
-    color: var(--s-color);
-    font-size: 8rem;
-    animation: fadein 5s;
-    -moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari and Chrome */
-    -o-animation: fadein 5s; /* Opera */
+  margin-top: 150px;
+  font-family: var(--header-text);
+  color: var(--s-color);
+  font-size: 8rem;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
 }
 
 /* Fade in animation for header */
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* End fade in animation for header */
 
 /* Fade in animation for opening */
 p#openingscene {
-    font-family: var(--content-text);
-    color: #fafafa;
-    font-size: 2rem;
-    animation: fadein 15s;
-    -moz-animation: fadein 15s; /* Firefox */
-    -webkit-animation: fadein 15s; /* Safari and Chrome */
-    -o-animation: fadein 15s; /* Opera */
+  font-family: var(--content-text);
+  color: #fafafa;
+  font-size: 2rem;
+  animation: fadein 15s;
+  -moz-animation: fadein 15s; /* Firefox */
+  -webkit-animation: fadein 15s; /* Safari and Chrome */
+  -o-animation: fadein 15s; /* Opera */
 }
 
 /* Fade in animation for opening */
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* End fade in animation for opening */
 
-
 #caption {
-    font-size: 2rem;
-    animation: fadein 30s;
-    -moz-animation: fadein 30s; /* Firefox */
-    -webkit-animation: fadein 30s; /* Safari and Chrome */
-    -o-animation: fadein 30s; /* Opera */
+  font-size: 2rem;
+  animation: fadein 30s;
+  -moz-animation: fadein 30s; /* Firefox */
+  -webkit-animation: fadein 30s; /* Safari and Chrome */
+  -o-animation: fadein 30s; /* Opera */
 }
 
 h2 {
-    font-family: var(--header-text);
-    letter-spacing: 2px;
-    text-shadow: 1px 3px 3px var(--t-color);
+  font-family: var(--header-text);
+  letter-spacing: 2px;
+  text-shadow: 1px 3px 3px var(--t-color);
 }
 
 button#start {
-    background-color: var(--s-color);
-    margin: 0px auto;
-    padding: 10px 20px;
-    /* https://getcssscan.com/css-box-shadow-examples */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    animation: fadein 25s;
-    -moz-animation: fadein 25s; /* Firefox */
-    -webkit-animation: fadein 25s; /* Safari and Chrome */
-    -o-animation: fadein 25s; /* Opera */
+  background-color: var(--s-color);
+  margin: 0px auto;
+  padding: 10px 20px;
+  /* https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: fadein 25s;
+  -moz-animation: fadein 25s; /* Firefox */
+  -webkit-animation: fadein 25s; /* Safari and Chrome */
+  -o-animation: fadein 25s; /* Opera */
 }
 
 /* Scene 1 */
@@ -326,44 +446,42 @@ button#start {
 }
 
 @keyframes mainImgFadeIn {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 10%;
-    }
-    100% {
-        opacity:100%;
-    } 
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 10%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
-
 .story-txt {
-    font-weight: 700;
-    animation: textFadeInOut 20s;  
-    visibility: hidden;
-    text-align: center;
-    width: 100%; 
+  font-weight: 700;
+  animation: textFadeInOut 20s;
+  visibility: hidden;
+  text-align: center;
+  width: 100%;
 }
 
 .story-txt.scene2 {
-    animation: textFadeInOut 15s;    
+  animation: textFadeInOut 15s;
 }
 
-
 #story-txt1 {
-    animation-delay: 3s;
-    position: absolute;
-    top: 5vh;
+  animation-delay: 3s;
+  position: absolute;
+  top: 5vh;
 }
 
 #story-txt2 {
-    animation-delay: 20s;
-    position: absolute;
-    top: 5vh;
+  animation-delay: 20s;
+  position: absolute;
+  top: 5vh;
 }
 
 /* #story-txt1.scene2,
@@ -371,29 +489,175 @@ button#start {
     top: 7vh;
 } */
 
-
 @keyframes textFadeInOut {
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    20% {
-        visibility: visible;
-        opacity: 1%;
-    }
-    40% {
-        visibility: visible;
-        opacity: 80%;
-    }
-    80% {
-        visibility: visible;
-        opacity: 80%;
-    }
-    100% {
-        visibility: hidden;
-        opacity: 0;
-        /*-- display none added in final sequence to reove the element from the DOM so as the next text box appears in same location --*/
-        display: none
-    }
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  20% {
+    visibility: visible;
+    opacity: 1%;
+  }
+  40% {
+    visibility: visible;
+    opacity: 80%;
+  }
+  80% {
+    visibility: visible;
+    opacity: 80%;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    /*-- display none added in final sequence to reove the element from the DOM so as the next text box appears in same location --*/
+    display: none;
+  }
 }
 
+
+/* Scene 2 */
+
+
+
+
+
+
+/* Scene 3 */
+
+#S3-story-txt1 {
+    position: absolute;
+    top: 4vh;
+}
+
+.office-img-block {
+    width: 80vw;
+    overflow: hidden;
+}
+
+.s3-main-img {
+    background-image: url("/assets/images/office.jpeg");
+    background-size: cover;
+    background-position: 0 70%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width:inherit;
+    max-width:1318px;
+    min-height: 100%;
+    max-height: none;
+    overflow: hidden;
+}
+
+#s3-img-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0, 0, 0, 0.98);
+}
+
+/*- cupboard -*/
+.hidden1 {
+    /*border:solid 5px red;-*/
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    width:10%;
+    height:30%;
+    position:absolute;
+    top:5%;
+    left:30%;
+    bottom:0;
+    right:0;
+    cursor: default;
+}
+
+/*- bin -*/
+.hidden2 {
+    /*-border:solid 5px blue;-*/
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    width:10%;
+    height:20%;
+    position:absolute;
+    top:67%;
+    left:52%;
+    bottom:0;
+    right:0;
+    cursor: default;
+}
+
+/*- chair -*/
+.hidden3 {
+    /*-border:solid 5px green;-*/
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    width:8%;
+    height:20%;
+    position:absolute;
+    top:50%;
+    left:65%;
+    bottom:0;
+    right:0;
+    cursor: default;
+}
+
+/*- desk -*/
+.hidden4 {
+    /*-border:solid 5px yellow;-*/
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    width:20%;
+    height:20%;
+    position:absolute;
+    top:50%;
+    left:28%;
+    bottom:0;
+    right:0;
+    cursor: default;
+}
+
+/*- floor -*/
+.hidden5 {
+    /*-border:solid 5px blueviolet;-*/
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    width:25%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:5%;
+    bottom:0;
+    right:0;
+    cursor: default;
+}
+
+.torch {
+    cursor: default;
+}
+
+.torch:before {
+    content: '';
+    display: block;
+    width: 79%;
+    max-width:1320px;
+    overflow-x:hidden;
+    height: inherit;
+    position: fixed;
+    background: radial-gradient(
+      circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.5) 60%,
+      rgba(0,0,0,0.95) 100%
+    )
+}
+
+.s3-main-img:hover,
+#s3-img-overlay:hover, 
+.hidden1:hover,
+.hidden2:hover,
+.hidden3:hover,
+.hidden4:hover,
+.hidden5:hover {
+      cursor: default;
+}

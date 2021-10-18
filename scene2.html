@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon -->
 
-    <!-- External Libraries/Frameworks CSS Links-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
-      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
 
-    <!-- Project Custom CSS Link -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- External Libraries/Frameworks CSS Links-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+    integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Replace {name} with name of scene -->
-    <title>Spooky Escape - The Hallway</title>
-  </head>
+  <!-- Project Custom CSS Link -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <body>
     <!-- Navigation -->
@@ -72,6 +65,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Story container -->
     <div class="container story-container">
@@ -95,6 +89,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Main Scene Image container -->
     <div class="container main-scene-container">
@@ -105,86 +100,65 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- User interaction container-->
-    <div class="container user-interactions-container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="user-interaction-title">Reader's Options</h2>
-          <div
-            class="btn-group user-interaction-buttons"
-            role="group"
-            aria-label="Basic example"
-          >
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#Modal-Die"
-            >
-              <span class="fs-3"> Head towards the footsteps </span>
-            </button>
-            <button type="button" class="btn btn-info" onclick="Scene2_Extra()">
-              <span class="fs-3"> Continue into the dark </span>
-            </button>
-            <button type="button" class="btn btn-warning" onclick="Scene3()">
-              <span class="fs-3"> Enter the nearest room </span>
-            </button>
-          </div>
+  <!-- User interaction container-->
+  <div class="container user-interactions-container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="user-interaction-title">Reader's Options</h2>
+        <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic example">
+          <button type="button" class="btn options" data-bs-toggle="modal" data-bs-target="#Modal-Die">
+            <span class="fs-3"> Head towards the footsteps </span>
+          </button>
+          <button type="button" class="btn options mx-5" onclick="Scene2_Extra()">
+            <span class="fs-3"> Continue towards the door </span>
+          </button>
+          <button type="button" class="btn options" onclick="Scene3()">
+            <span class="fs-3"> Enter the nearest room </span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Options Modal -->
-    <div
-      class="modal fade"
-      id="Modal-Die"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              You head towards the footsteps and face your pursuer...
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            You face the mysterious figure that has been following you. The
-            figure is dark and significantly tall.
-            <br />
-            The figure reaches out to your neck and holds you up strangling you
-            with its grip. You groan and fight back in panic however, the dark
-            figure begins to chant in a strange language.
-            <br />
-            It's chants grow louder and fiercer. Your vision begins to blur and
-            you begin to become dizzy. Everything goes black...
-            <!-- need to add link here to next scene -->
-          </div>
-          <div class="modal-footer">
-            <a class="rounded-pill bg-dark p-2 text-light" href="end.html">
-              You Died
-            </a>
-          </div>
+  <!-- Options Modal -->
+  <div class="modal fade" id="Modal-Die" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            You head towards the footsteps and face your pursuer...
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          You face the mysterious figure that has been following you. The
+          figure is dark and significantly tall.
+          <br />
+          The figure reaches out to your neck and holds you up strangling you
+          with its grip. You groan and fight back in panic however, the dark
+          figure begins to chant in a strange language.
+          <br />
+          It's chants grow louder and fiercer. Your vision begins to blur and
+          you begin to become dizzy. Everything goes black... You are dying.
+          <!-- need to add link here to next scene -->
+        </div>
+        <div class="modal-footer">
+          <a class="rounded-pill bg-dark p-3 text-light fs-5" href="index.html">
+            You Died
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- External Libraries/Frameworks JS Links-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
-      integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Project Custom JS Link -->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- External Libraries/Frameworks JS Links-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Project Custom JS Link -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
