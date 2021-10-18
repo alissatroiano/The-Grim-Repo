@@ -1,30 +1,91 @@
 // global variables
 
-// remove below code and replace with actual code, just for testing purposes
-
-let test = 'test'
-
-// main
-
-console.log(test)
-
 // play background audio
+const current_page = window.location.pathname;
+const local = window.location.hostname;
+console.log(current_page);
 
-var audio1 = document.getElementById('audio1')
-var isPlaying = false
+let main_image = document.querySelector('.main-scene-image');
+
+let audio = document.getElementById('audio');
+audio.volume = 0.25;
+
+let isPlaying = false;
+
+switch(current_page) {
+  case '/':
+      audio.setAttribute('src', 'assets/audio final/intro or outro/accompaniment epona-[AudioTrimmer.com]-extreme.mp3');
+      break;
+  case '/index.html':
+      audio.setAttribute('src', 'assets/audio final/intro or outro/accompaniment epona-[AudioTrimmer.com]-extreme.mp3');
+      break;
+  case '/scene1.html':
+      audio.setAttribute('src', 'assets/audio/Scene1_background_audio.m4a');
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/beds.jpg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/beds.jpg)";
+      }
+      break;
+  case '/scene2.html':
+      audio.setAttribute('src', 'assets/audio/Hallway.mp3');
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/hallways.jpeg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/hallways.jpeg)";
+      }
+      break;
+  case '/scene2-extra.html':
+      audio.setAttribute('src', 'assets/audio/Ritual.mp3');
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/ritual.jpeg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/ritual.jpeg)";
+      }
+      break;
+  case '/scene3.html':
+      audio.setAttribute('src', 'assets/audio/Scene3 - background-audio.m4a');
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/office.jpeg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/office.jpeg)";
+      }
+      break;
+  case '/end.html':
+      audio.setAttribute('src', 'assets/audio final/intro or outro/Kawir - (Hymn to Apollo)-[AudioTrimmer.com] long version.mp3');
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/esp-1.jpg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/esp-1.jpg)";
+      }
+      break;
+  default:
+      break;
+}
 
 function togglePlay() {
-  isPlaying ? audio1.pause() : audio1.play();
-};
+  isPlaying ? audio.pause() : audio.play();
+}
 
-audio1.onplaying = function() {
+audio.onplaying = function () {
   isPlaying = true;
-};
-audio1.onpause = function() {
+}
+audio.onpause = function () {
   isPlaying = false;
+}
+
+// Scene 2 Routes
+function Scene2() {
+  window.location.href = '/scene2.html';
+}
+
+function Scene2_Extra() {
+  window.location.href = '/scene2-extra.html';
 };
 
-
+function Scene3() {
+  window.location.href = '/scene3.html';
+}
 
 function phoneOn() {
   let myModalEl = document.getElementById('Modal-office');
@@ -53,7 +114,6 @@ function phoneOn() {
   
   document.addEventListener('mousemove',update)
   
-  
 }
 
 // Replay Context of Scene 1
@@ -77,9 +137,4 @@ function replayContext() {
   }
 
   Paragraph.classList.add('paragraph-position')
-}
-
-// Start Button //
-function startButton() {
-  window.open('scene1.html')
 }
