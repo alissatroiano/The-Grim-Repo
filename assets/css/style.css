@@ -705,3 +705,37 @@ animation: mainImgFadeIn 8s;
     background-color: var(--l-color);
     font-size: 1.5rem;
 }
+
+/* ************************* Media Queries Start Here */
+@media screen and (min-width: 1400px) {
+  body {
+      margin-top: 20px;
+      min-height: 100vh;
+      width: 100%;
+      overflow: hidden;
+  }
+  p.story-text {
+    margin: 20px 0px 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    margin: 0px auto;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  p.story-text {
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  body {
+    margin: 0px auto;
+    min-height: 100vh;
+    width: 100%;
+  }
+}
