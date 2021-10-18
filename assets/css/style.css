@@ -269,10 +269,12 @@ p {
     border-radius: 1rem;
     min-height: 20rem;
     margin: 2rem auto;
+    position: relative;
 }
 
 .main-scene-image {
-    background: url("../images/esp-1.jpg") no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     object-fit: contain;
     height: 40vh;
@@ -524,25 +526,18 @@ button#start {
     background-size: cover;
 }
 
-.row p {
-    color: #e64b18;
+.bolder-text {
+    color: var(--s-color);
     text-align: center;
     position:relative;
-    font-size: large;
-    font-weight:bold;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 #home-link {
     color:#e64b18;
 }
-/* Scene 2 */
-
-
-
-
-
-
-/* Scene 3 */
 
 #S3-story-txt1 {
     position: absolute;
