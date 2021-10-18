@@ -283,8 +283,6 @@ p {
 }
 
 .user-interactions-container {
-  border: 1px solid var(--s-color);
-  border-radius: 1rem;
   min-height: 20rem;
   margin: 2rem auto;
 }
@@ -472,7 +470,7 @@ animation: mainImgFadeIn 8s;
   visibility: hidden;
   text-align: center;
   width: 100%;
-  top: 3vh;
+  top: 5vh;
   position: absolute;
 }
 
@@ -696,14 +694,19 @@ animation: mainImgFadeIn 8s;
 
 .modal-header, .modal-footer {
     background-color: var(--s-color);
-    font-family:var(--header-text);
-    font-weight:bold;
+    font-family: var(--header-text);
+    font-weight: bold;
+}
+
+.modal-header h4 {
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
 
 .modal-body {
     font-family:var(--content-text);
     background-color: var(--l-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* ************************* Media Queries Start Here */

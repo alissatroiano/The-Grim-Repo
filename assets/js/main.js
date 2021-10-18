@@ -108,6 +108,10 @@ function Scene3() {
   window.location.href = '/scene3.html';
 }
 
+function restart() {
+  window.location.href = 'index.html';
+}
+
 function phoneOn() {
   let myModalEl = document.getElementById('Modal-office');
   let modal = bootstrap.Modal.getInstance(myModalEl)
