@@ -14,10 +14,10 @@ audio.volume = 0.25;
 let isPlaying = false;
 
 switch(current_page) {
-  case '/':
+  case '/The-Grim-Repo/':
       audio.setAttribute('src', 'assets/audio final/intro or outro/accompaniment epona-[AudioTrimmer.com]-extreme.mp3');
       break;
-  case '/index.html':
+  case '/The-Grim-Repo/index.html':
       audio.setAttribute('src', 'assets/audio final/intro or outro/accompaniment epona-[AudioTrimmer.com]-extreme.mp3');
       break;
   case '/The-Grim-Repo/scene1.html':
