@@ -514,7 +514,27 @@ button#start {
   }
 }
 
+/* error page  */
+.image-404 {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    background: url('../images/pumpkins.jpeg') no-repeat center center;
+    background-size: cover;
+}
 
+.row p {
+    color: #e64b18;
+    text-align: center;
+    position:relative;
+    font-size: large;
+    font-weight:bold;
+}
+
+#home-link {
+    color:#e64b18;
+}
 /* Scene 2 */
 
 
