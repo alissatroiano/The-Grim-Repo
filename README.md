@@ -71,14 +71,20 @@ User Stories were created during the development phase of this project to help t
 - [CSS Scan](https://getcssscan.com/css-box-shadow-examples) box shadow styles were copied from CSS Scan.
 - [CSS Buttons Glitch Effect](https://cssbuttons.io/detail/namecho/slippery-moth-23)
 
-## Testing:
+## Team!
 
+This team consisted of 6 members:
 
+- <a href="https://github.com/alissatroiano">Alissa</a>
+- <a href="https://github.com/KelvenH">Kelven</a>
+- <a href="https://github.com/bellsmith15">Nikki</a>
+- <a href="https://github.com/nikolmichaelidou">Nikoletta</a>
+- <a href="https://github.com/wyne-ybanez">Wyne</a>
+- <a href="https://github.com/auzfuse">Anthony</a>
 
+This project would not of been possible without our teamwork. Go team Grim Repo.
 
-## Deployment:
-
-
+Final EE........go find them 🤜
 
 
 
