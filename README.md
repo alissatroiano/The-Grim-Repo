@@ -2,6 +2,8 @@
 
 Spooky Escape is an online spooky story experience, that invites users to make logical decisions that will control their fate. Follow the prompts to escape this terrifying nightmare. A scary experience enhanced with animated images and audio clips. This game will be built using HTML, CSS, Bootstrap and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/). This experience is meant for Desktop use only.
 
+![Project Snapshot](assets/images/se-snapshot.png)
+
 ## UX
 
 ![User Stories](assets/images/user-stories.png)
@@ -53,11 +55,11 @@ User Stories were created during the development phase of this project to help t
 | -------------------------------------- | ------------------------------ | ----------- | --------- | ------------------------------------------------------------------------------------------------------------------- |
 | Home pages lodads for user             | Index                          | Chrome/Edge | Pass      |                                                                                                                     |
 | Audio works for user                   | All                            | Chrome/Edge | Pass      |                                                                                                                     |
-| Navigation/Option button work for user | Scene 2-extra and Scene 3      | Chrome/Edge | Fail      | Option B and C brought me to a 404 page. On scene 3, Option A and C didn't work.                                    |
+| Navigation/Option button work for user | Scene 2-extra and Scene 3      | Chrome/Edge | ~~Fail~~ PASS      | ~~Option B and C brought me to a 404 page. On scene 3, Option A and C didn't work.~~ Now resolved                                |
 | Content loads for user                 | Index,Scene1,Scene2,Scene4,End |             | Pass      |                                                                                                                     |
-| Flash light effect                     | Scene 3                        | Chrome/Edge | Fail      | The flashlight effect doesn't work. It also doesn't stay in place.The "darkness" follows your mouse while scrolling |
-| Can the user proceed to scene 4        | Scene 3                        | Chrome/Edge | Fail      | When the secret entrance is found, and press proceed nothing happens                                                |
-| Story content                          | ALL                            | Chrome/Edge | Fail      | Alignment issue                                                                                                     |
+| Flash light effect                     | Scene 3                        | Chrome/Edge | ~~Fail~~ PASS      | ~~The flashlight effect doesn't work. It also doesn't stay in place.The "darkness" follows your mouse while scrolling~~ Now resolved in PR from Kelven |
+| Can the user proceed to scene 4        | Scene 3                        | Chrome/Edge | ~~Fail~~ PASS      | ~~When the secret entrance is found, and press proceed nothing happens~~ Not necessarily a FAIL as this is a future feature                                                |
+| Story content                          | ALL                            | Chrome/Edge | ~~Fail~~ PASS     | ~~Alignment issue~~ Content alignment resolved                                                                                                     |
 
 ## Credits
 
