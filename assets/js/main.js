@@ -56,7 +56,7 @@ switch(current_page) {
       if(local === '127.0.0.1' || local === 'localhost') {
           main_image.style.backgroundImage = "url(assets/images/esp-1.jpg)";
       } else {
-          main_image.style.backgroundImage = "url(../images/esp.jpg)";
+          main_image.style.backgroundImage = "url(../images/esp-1.jpg)";
       }
       break;
   default:
