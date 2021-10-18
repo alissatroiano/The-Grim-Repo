@@ -48,6 +48,17 @@ User Stories were created during the development phase of this project to help t
 - [Google Chrome Developer Tools] used as the core test phase throughout the project build life, testing the responsiveness of elements and CSS visuals.
 - [Microsoft Excel] used for testing table.
 
+## Testing
+| Functionality                          | Page                           | Browser     | Pass/Fail | Comment if Fail                                                                                                     |
+| -------------------------------------- | ------------------------------ | ----------- | --------- | ------------------------------------------------------------------------------------------------------------------- |
+| Home pages lodads for user             | Index                          | Chrome/Edge | Pass      |                                                                                                                     |
+| Audio works for user                   | All                            | Chrome/Edge | Pass      |                                                                                                                     |
+| Navigation/Option button work for user | Scene 2-extra and Scene 3      | Chrome/Edge | Fail      | Option B and C brought me to a 404 page. On scene 3, Option A and C didn't work.                                    |
+| Content loads for user                 | Index,Scene1,Scene2,Scene4,End |             | Pass      |                                                                                                                     |
+| Flash light effect                     | Scene 3                        | Chrome/Edge | Fail      | The flashlight effect doesn't work. It also doesn't stay in place.The "darkness" follows your mouse while scrolling |
+| Can the user proceed to scene 4        | Scene 3                        | Chrome/Edge | Fail      | When the secret entrance is found, and press proceed nothing happens                                                |
+| Story content                          | ALL                            | Chrome/Edge | Fail      | Alignment issue                                                                                                     |
+
 ## Credits
 
 - [Code Institute](https://codeinstitute.net/)
