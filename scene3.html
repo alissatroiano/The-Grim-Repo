@@ -20,7 +20,6 @@
     </head>
 
     <body>
-
         <!-- Navigation -->
         <div class="container scene-nav">
             <div class="row text-center">
@@ -61,7 +60,7 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-lg-4">
-                    <h2 class="scene-title">Awaken</h2>
+                    <h2 class="scene-title">Darkness</h2>
                 </div>
                 <div class="col-sm-12 col-lg-4 utility">
                     <!-- Button trigger modal -->
@@ -118,7 +117,7 @@
                     <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-primary large-text" data-bs-toggle="modal" data-bs-target="#Modal-leave">Return to Hallway - maybe I missed something?</button>
                         <button type="button" class="btn btn-info large-text" data-bs-toggle="modal" data-bs-target="#Modal-office">Check pockets</button>
-                        <button type="button" class="btn btn-warning large-text">Search for clues</button>
+                        <button type="button" class="btn btn-warning large-text" data-bs-toggle="modal" data-bs-target="#Modal-clues">Search for clues</button>
                     </div>
                 </div>
             </div>
@@ -223,7 +222,42 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        You get down on your hands and knees and search the floor. You put your hands on something furry which suddenly moves and snarls..... 
+                        You get down on your hands and knees and search the floor. You put your hands on something furry which suddenly moves and snarls.....
+                        <a href="the-end.html">Click to find out what happens next</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal-clues" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Clues</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Use your phone's flashlight to look around. Then click on the clues when you find them!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal-leave" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Go back</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       You chicken out.. and go back to <a href="scene2.html">the hallway</a>.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

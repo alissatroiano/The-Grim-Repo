@@ -358,6 +358,49 @@ h1#reveal {
 }
 /* End fade in animation for header */
 
+h1#end {
+  margin-top: 150px;
+  font-family: var(--header-text);
+  color: var(--s-color);
+  font-size: 8rem;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
+}
+
+/* Fade in animation for header */
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* End fade in animation for header */
+
 /* Fade in animation for opening */
 p#openingscene {
   font-family: var(--content-text);
@@ -399,7 +442,50 @@ p#openingscene {
     opacity: 1;
   }
 }
-/* End fade in animation for opening */
+/* End fade in animation for closing */
+
+/* Fade in animation for closing */
+p#closing-scene {
+  font-family: var(--content-text);
+  color: #fafafa;
+  font-size: 2rem;
+  animation: fadein 15s;
+  -moz-animation: fadein 15s; /* Firefox */
+  -webkit-animation: fadein 15s; /* Safari and Chrome */
+  -o-animation: fadein 15s; /* Opera */
+}
+
+/* Fade in animation for closing */
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* End fade in animation for closing */
 
 #caption {
   font-size: 2rem;

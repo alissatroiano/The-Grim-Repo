@@ -79,7 +79,11 @@ function replayContext() {
   Paragraph.classList.add('paragraph-position')
 }
 
-// Start Button //
-function startButton() {
-  window.open('scene1.html')
+// Scene 2 Routes
+function Scene3() {
+  window.location.replace('scene3.html')
+}
+
+function Scene2_Extra() {
+  window.location.replace('scene2-extra.html')
 }
