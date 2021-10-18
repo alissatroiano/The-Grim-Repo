@@ -119,28 +119,14 @@
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="user-interaction-title">Reader's Options</h2>
-          <div
-            class="btn-group user-interaction-buttons"
-            role="group"
-            aria-label="Basic example"
-          >
-            <button
-              type="button"
-              class="btn options"
-              data-bs-toggle="modal"
-              data-bs-target="#Modal-Die"
-            >
+          <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic exam >
+            <button type="button" class="btn options" data-bs-toggle="modal" data-bs-target="#Modal-Die">
               <span class="fs-3"> Head towards the footsteps </span>
             </button>
-            <button
-              type="button"
-              class="btn options mx-5"
-              data-bs-toggle="modal"
-              data-bs-target="#Modal-Check"
-            >
+            <button type="button" class="btn options mx-5" data-bs-toggle="modal" data-bs-target="#Modal-Check">
               <span class="fs-3"> Check symbol on the door </span>
             </button>
-            <button type="button" class="btn options" onclick="Scene3()">
+            <button type="button" class="btn options" onclick="Scene2()">
               <span class="fs-3"> Enter the previous room</span>
             </button>
           </div>
@@ -149,13 +135,7 @@
     </div>
 
     <!-- Options Modal -->
-    <div
-      class="modal fade"
-      id="Modal-Die"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="Modal-Die" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -176,10 +156,7 @@
             <!-- need to add link here to next scene -->
           </div>
           <div class="modal-footer">
-            <a
-              class="rounded-pill bg-dark p-3 text-light fs-5"
-              href="index.html"
-            >
+            <a class="rounded-pill bg-dark p-3 text-light fs-5" href="index.html">
               You Died
             </a>
           </div>
@@ -187,25 +164,14 @@
       </div>
     </div>
 
-    <div
-      class="modal fade"
-      id="Modal-Check"
-      tabindex="-1"
-      aria-labelledby="ModalCheck"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="Modal-Check" tabindex="-1" aria-labelledby="ModalCheck" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="ModalCheck">
               You check the symbol on the barred door...
             </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             You investigate what the symbols is and why it seems familar to you.
@@ -217,14 +183,7 @@
             black...
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn rounded-pill btn-secondary"
-              id="tokenSymbol"
-              value="Symbol"
-              data-bs-dismiss="modal"
-              onclick="takeToken()"
-            >
+            <button type="button" class="btn rounded-pill btn-secondary" id="tokenSymbol" value="Symbol" data-bs-dismiss="modal" onclick="takeToken()">
               Take Symbol
             </button>
           </div>
