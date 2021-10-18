@@ -2,6 +2,7 @@
 
 // play background audio
 const current_page = window.location.pathname;
+const local = window.location.hostname;
 console.log(current_page);
 
 let main_image = document.querySelector('.main-scene-image');
@@ -20,20 +21,44 @@ switch(current_page) {
       break;
   case '/scene1.html':
       audio.setAttribute('src', 'assets/audio/Scene1_background_audio.m4a');
-      main_image.style.backgroundImage = "url(/assets/images/beds.jpg)";
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/beds.jpg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/beds.jpg)";
+      }
       break;
   case '/scene2.html':
       audio.setAttribute('src', 'assets/audio/Hallway.mp3');
-      main_image.style.backgroundImage = "url(/assets/images/hallways.jpeg)";
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/hallways.jpg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/hallways.jpg)";
+      }
       break;
   case '/scene2-extra.html':
       audio.setAttribute('src', 'assets/audio/Ritual.mp3');
-      main_image.style.backgroundImage = "url(/assets/images/ritual.jpeg)";
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/ritual.jpeg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/ritual.jpeg)";
+      }
       break;
   case '/scene3.html':
       audio.setAttribute('src', 'assets/audio/Scene3 - background-audio.m4a');
-      main_image.style.backgroundImage = "url(assets/images/office.jpeg)";
-        break;
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/office.jpeg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/office.jpeg)";
+      }
+      break;
+  case '/end.html':
+      audio.setAttribute('src', 'assets/audio final/intro or outro/Kawir - (Hymn to Apollo)-[AudioTrimmer.com] long version.mp3');
+      if(local === '127.0.0.1' || local === 'localhost') {
+          main_image.style.backgroundImage = "url(assets/images/esp-1.jpg)";
+      } else {
+          main_image.style.backgroundImage = "url(../images/esp.jpg)";
+      }
+      break;
   default:
       break;
 }
