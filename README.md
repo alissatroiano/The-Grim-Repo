@@ -1,6 +1,6 @@
 # Spooky Escape
 
-Spooky Escape is an online spooky story experience, that invites users to make logical decisions that will control their fate. Follow the prompts to escape this terrifying nightmare. A scary experience enhanced with animated images and audio clips. This game will be built using HTML, CSS, Bootstrap and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/).
+Spooky Escape is an online spooky story experience, that invites users to make logical decisions that will control their fate. Follow the prompts to escape this terrifying nightmare. A scary experience enhanced with animated images and audio clips. This game will be built using HTML, CSS, Bootstrap and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/). This experience is meant for Desktop use only.
 
 ## UX
 
@@ -41,9 +41,12 @@ User Stories were created during the development phase of this project to help t
 ## Technologies
 
 - [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used to make this game responsive and visually appealing.
-- [CSS]  (https://css-tricks.com/guides/) was used to style the project
-- [HTML] (https://html.com/#Creating_Your_First_HTML_Webpage) was used as a base language
-- [Javascript] (https://www.javascript.com/learn/strings) was used to make the audio and images dynamic on each scene
+- [CSS]  (https://css-tricks.com/guides/) was used to style the project.
+- [HTML] (https://html.com/#Creating_Your_First_HTML_Webpage) was used as a base language.
+- [Javascript] (https://www.javascript.com/learn/strings) was used to make the audio and images dynamic on each scene.
+- [Github] used to host the deployed website and the repository of all previous versions of the build.
+- [Google Chrome Developer Tools] used as the core test phase throughout the project build life, testing the responsiveness of elements and CSS visuals.
+- [Microsoft Excel] used for testing table.
 
 ## Credits
 
@@ -57,6 +60,10 @@ User Stories were created during the development phase of this project to help t
 
 ## Testing:
 
+
+
+
+## Deployment:
 
 
 
