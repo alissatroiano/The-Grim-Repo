@@ -163,6 +163,12 @@ p {
     color: var(--l-color);
 }
 
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Navigation */
 .scene-nav {
   padding: 3rem 0;
@@ -696,12 +702,17 @@ animation: mainImgFadeIn 8s;
 
 .modal-header, .modal-footer {
     background-color: var(--s-color);
-    font-family:var(--header-text);
-    font-weight:bold;
+    font-family: var(--header-text);
+    font-weight: bold;
+}
+
+.modal-header h4 {
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
 
 .modal-body {
     font-family:var(--content-text);
     background-color: var(--l-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
