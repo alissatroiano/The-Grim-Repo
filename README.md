@@ -2,7 +2,7 @@
 
 Spooky Escape is an online spooky story experience, that invites users to make logical decisions that will control their fate. Follow the prompts to escape this terrifying nightmare. A scary experience enhanced with animated images and audio clips. This game will be built using HTML, CSS, Bootstrap and JavaScript for [Code Institute's](https://codeinstitute.net/) October 2021 [Spookathon](https://hackathon.codeinstitute.net/hackathon/12/). This experience is meant for Desktop use only.
 
-![Project Snapshot](assets/images/se-snapshot.png)
+![Project Snapshot](https://github.com/alissatroiano/The-Grim-Repo/blob/main/assets/images/se-snapshot.PNG)
 
 ## UX
 
