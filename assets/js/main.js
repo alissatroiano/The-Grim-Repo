@@ -30,19 +30,19 @@ switch(current_page) {
       break;
   case '/The-Grim-Repo/scene2.html':
       audio.setAttribute('src', 'assets/audio/Hallway.mp3');
-      main_image.style.backgroundImage = "url(assets/images/hallways.jpeg)";
+      main_image.style.backgroundImage = "url(../images/hallways.jpeg)";
       break;
   case '/The-Grim-Repo/scene2-extra.html':
       audio.setAttribute('src', 'assets/audio/Ritual.mp3');
-      main_image.style.backgroundImage = "url(assets/images/ritual.jpeg)";
+      main_image.style.backgroundImage = "url(../images/ritual.jpeg)";
       break;
   case '/The-Grim-Repo/scene3.html':
       audio.setAttribute('src', 'assets/audio/Scene3 - background-audio.m4a');
-      main_image.style.backgroundImage = "url(assets/images/office.jpeg)";
+      main_image.style.backgroundImage = "url(../images/office.jpeg)";
       break;
   case '/The-Grim-Repo/end.html':
       audio.setAttribute('src', 'assets/audio final/intro or outro/Kawir - (Hymn to Apollo)-[AudioTrimmer.com] long version.mp3');
-      main_image.style.backgroundImage = "url(assets/images/esp-1.jpg)";
+      main_image.style.backgroundImage = "url(../images/esp-1.jpg)";
       break;
   default:
       break;
