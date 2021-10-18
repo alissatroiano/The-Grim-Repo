@@ -283,8 +283,6 @@ p {
 }
 
 .user-interactions-container {
-  border: 1px solid var(--s-color);
-  border-radius: 1rem;
   min-height: 20rem;
   margin: 2rem auto;
 }
