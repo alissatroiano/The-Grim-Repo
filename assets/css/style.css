@@ -272,21 +272,12 @@ p {
 }
 
 .main-scene-image {
-<<<<<<< HEAD
     background: url("../images/esp-1.jpg") no-repeat center center;
     background-size: cover;
     object-fit: contain;
     height: 40vh;
     min-height: 100%;
     max-height: none;
-=======
-  background: url('../images/hallways.jpeg') no-repeat center center;
-  background-size: cover;
-  object-fit: contain;
-  height: 40vh;
-  min-height: 100%;
-  max-height: none;
->>>>>>> f602eaa96220b0f82d40b2a0c9611748d9fea84b
 }
 
 .user-interactions-container {
