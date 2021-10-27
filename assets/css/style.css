@@ -16,6 +16,7 @@
   --s-color: #e64b18;
   --t-color: #602749;
   --l-color: #e6e2b3;
+  --d-color: #1a1616;
 
   /*-cursor position - used to update tracking of torchlight --*/
   --cursorX: 35vw;
@@ -143,7 +144,7 @@ button.options:hover::after {
 }
 
 body {
-  background-color: var(--p-color);
+  background-color: var(--d-color);
 }
 
 a {
@@ -155,6 +156,10 @@ p {
   font-size: 2rem;
   color: var(--p-color);
   font-family: var(--content-text);
+}
+
+.text-light {
+  color: var(--l-color);
 }
 
 /* Navigation */
@@ -243,14 +248,6 @@ p {
   margin: 2rem auto;
 }
 
-.story-container {
-  background: url('../images/scroll-expanded.png') content-box no-repeat center
-    center;
-  background-size: contain;
-  min-height: 20rem;
-  margin: 2rem auto;
-}
-
 .story-scene-title,
 .user-interaction-title {
   font-family: var(--header-text);
@@ -272,12 +269,12 @@ p {
   border-radius: 1rem;
   min-height: 20rem;
   margin: 2rem auto;
-  background-color: --p-color;
   position: relative;
 }
 
 .main-scene-image {
-  background: url('../images/hallways.jpeg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   object-fit: contain;
   height: 40vh;
@@ -286,8 +283,6 @@ p {
 }
 
 .user-interactions-container {
-  border: 1px solid var(--s-color);
-  border-radius: 1rem;
   min-height: 20rem;
   margin: 2rem auto;
 }
@@ -431,7 +426,6 @@ button#start {
 /* Scene 1 */
 .s1-main-img,
 .s2-main-img {
-  background-image: url('../images/beds.jpg');
   background-size: cover;
   background-position: 0 70%;
   object-fit: contain;
@@ -439,17 +433,18 @@ button#start {
   height: 40vh;
   min-height: 100%;
   max-height: none;
+}
+.s1-main-img {
   animation: mainImgFadeIn 8s;
 }
 
 /* Scene 2 */
 .s2-main-img {
-  background-image: url('../images/hallways.jpeg');
   background-position: 0 50%;
+  animation: mainImgFadeIn 2s;
 }
 
 .s2-main-img.extra {
-  background-image: url('../images/ritual.jpeg');
   background-position: 0 70%;
 }
 
@@ -474,6 +469,8 @@ button#start {
   visibility: hidden;
   text-align: center;
   width: 100%;
+  top: 5vh;
+  position: absolute;
 }
 
 .story-txt.scene2 {
@@ -482,20 +479,24 @@ button#start {
 
 #story-txt1 {
   animation-delay: 3s;
-  position: absolute;
-  top: 5vh;
 }
 
 #story-txt2 {
   animation-delay: 20s;
-  position: absolute;
-  top: 5vh;
 }
 
-#story-txt1.scene2,
-#story-txt2.scene2 {
-  top: 7vh;
+#story-txt-3 {
+  animation-delay: 1s;
 }
+
+#story-txt4 {
+  animation-delay: 15s;
+}
+
+/* #story-txt1.scene2,
+#story-txt2.scene2 {
+    top: 7vh;
+} */
 
 @keyframes textFadeInOut {
   0% {
@@ -522,13 +523,27 @@ button#start {
   }
 }
 
-/* Scene 2 */
+/* error page  */
+.image-404 {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  background: url('../images/pumpkins.jpeg') no-repeat center center;
+  background-size: cover;
+}
 
-/* Scene 3 */
+.bolder-text {
+  color: var(--s-color);
+  text-align: center;
+  position: relative;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 
-#S3-story-txt1 {
-  position: absolute;
-  top: 4vh;
+#home-link {
+  color: #e64b18;
 }
 
 .office-img-block {
@@ -641,11 +656,11 @@ button#start {
 .torch:before {
   content: '';
   display: block;
-  width: 79%;
+  width: 100%;
   max-width: 1320px;
   overflow-x: hidden;
   height: inherit;
-  position: fixed;
+
   background: radial-gradient(
     circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
     rgba(0, 0, 0, 0) 0%,
@@ -664,6 +679,63 @@ button#start {
   cursor: default;
 }
 
-/* Scene 4 */
+/*- modal styles -*/
 
-/* Scene 5 */
+.modal-content {
+  border-radius: 20px;
+  border: solid var(--s-color) 10px;
+  box-shadow: 6px 0px 0px #602749;
+  outline: transparent;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: var(--s-color);
+  font-family: var(--header-text);
+  font-weight: bold;
+}
+
+.modal-header h4 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.modal-body {
+  font-family: var(--content-text);
+  background-color: var(--l-color);
+  font-size: 2rem;
+}
+
+/* ************************* Media Queries Start Here */
+@media screen and (min-width: 1400px) {
+  body {
+    margin-top: 20px;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  p.story-text {
+    margin: 20px 0px 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    margin: 0px auto;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  p.story-text {
+    margin: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  body {
+    margin: 0px auto;
+    min-height: 100vh;
+    width: 100%;
+  }
+}

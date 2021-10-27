@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
-
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
     <!-- External Libraries/Frameworks CSS Links-->
     <link
       rel="stylesheet"
@@ -19,24 +19,23 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Replace {name} with name of scene -->
-    <title>Spooky Escape - Scene {name}</title>
-  </head>
+   
 
-  <body>
-    <!-- Navigation -->
-    <div class="container scene-nav">
-      <div class="row text-center">
-        <div class="col-sm-12 col-lg-4 brand">
-          <svg
-            id="nav-ghost"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512.001 512.001"
-          >
-            <g>
-              <g>
-                <g>
-                  <path
-                    d="M417.913,490.426c-0.385-0.138-38.763-14.23-55.472-58.08c-14.151-37.133-6.785-79.476,19.224-110.507
+        <!-- Replace {name} with name of scene -->
+        <title>Spooky Escape - Scene End</title>
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <div class="container scene-nav">
+            <div class="row text-center">
+                <div class="col-sm-12 col-lg-4 brand">
+                    <svg id="nav-ghost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001">
+                        <g>
+                            <g>
+                                <g>
+                                    <path d="M417.913,490.426c-0.385-0.138-38.763-14.23-55.472-58.08c-14.151-37.133-6.785-79.476,19.224-110.507
                                             c14.821-17.682,63.176-79.533,63.176-132.999C444.84,84.714,360.127,0,256.001,0S67.161,84.714,67.161,188.84
                                             c0,69.232,32.57,145.853,87.125,204.963c45.579,49.385,127.55,109.975,259.215,118.176c0.234,0.014,0.467,0.022,0.699,0.022
                                             c5.239,0,9.811-3.685,10.875-8.88C426.183,497.695,423.129,492.281,417.913,490.426z M170.611,378.734
@@ -64,75 +63,70 @@
                   <path
                     d="M361.099,257.152c1.806,1.102,3.802,1.626,5.773,1.626c3.746,0,7.401-1.895,9.494-5.326
                                             c15.503-25.419,24.04-48.366,24.04-64.613c0-6.135-4.974-11.108-11.108-11.108c-6.134,0-11.108,4.973-11.108,11.108
-                                            c0,11.869-7.772,31.698-20.791,53.045C354.205,247.121,355.862,253.957,361.099,257.152z"
-                  />
-                </g>
-              </g>
-            </g>
-          </svg>
-          <a href="#">
-            <h1 class="brand-name">Horror Escape</h1>
-          </a>
+                                            c0,11.869-7.772,31.698-20.791,53.045C354.205,247.121,355.862,253.957,361.099,257.152z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <a href="index.html">
+                        <h1 class="brand-name">Horror Escape</h1>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <h2 class="scene-title">Did you survive?</h2>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <!--Toggle Audio Button-->
+                    <audio id="audio" preload="auto"></audio>
+                    <a class="btn active btn-audio" aria-pressed="true" onClick="togglePlay()">Toggle Audio</a>
+                    
+                </div>
+            </div>
         </div>
-        <div class="col-sm-12 col-lg-4">
-          <h2 class="scene-title">Scene Title</h2>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-          <!--Toggle Audio Button-->
-          <!-- Uncomment audio element, and add id/source.
-                    id should be "audio#", where # is a number...in case of scene 1 for example
-                    the id is "audio1". -->
-          <!-- <audio id="" src="" preload="auto"></audio> -->
-          <a
-            class="btn active btn-audio"
-            aria-pressed="true"
-            onClick="togglePlay()"
-            >Toggle Audio</a
-          >
+
+        <!-- Story container -->
+        <div class="container story-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="story-detail">
+                        <p id="story-txt1" class="story-txt">
+                            Congratulations you have passed our test! Now it is time to receive your prize.
+                            <br>O mater, sanctum nomen tuum. Responde mihi revela! An laudandi sint vel maledicendi?
+                            <br>
+                        </p>
+                        <p id="story-txt2" class="story-txt">For braving our test, you get 10% <strong> Nox et horror </strong>
+                            <br> USE CODE: "Alphonse_Capone1930" in order to receive 10% discount on your fun 😈 visit.
+                            <br> We opened  on October 25, 1829...👻Mox videbimus... In vita proxima.
+                            <br> Virgil cannot wait to give you a tour!
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
 
-    <!-- Story container -->
-    <div class="container story-container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <div class="story-detail">
-            <p id="story-txt1" class="story-txt">
-              Add story text here part 1....
-            </p>
-            <p id="story-txt2" class="story-txt">
-              Add story text here part 1....
-            </p>
-          </div>
+        <!-- Main Scene Image container -->
+        <div class="container main-scene-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- Replace "img" with actual scene img required -->
+                    <div class="main-scene-image"></div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
 
-    <!-- Main Scene Image container -->
-    <div class="container main-scene-container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <!-- Replace "img" with actual scene img required -->
-          <img src="/workspace/The-Grim-Repo/assets/images/PP-3.jpg" alt="3" />
-          <div class="main-scene-image"></div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- User interaction container-->
     <div class="container user-interactions-container">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="user-interaction-title">Reader's Options</h2>
-          <div
-            class="btn-group user-interaction-buttons"
-            role="group"
-            aria-label="Basic example"
-          >
-            <button type="button" class="btn btn-primary">Option A</button>
-            <button type="button" class="btn btn-info">Option B</button>
-            <button type="button" class="btn btn-warning">Option C</button>
+          <div class="btn-group user-interaction-buttons" role="group" aria-label="Basic example">
+            <button type="button" class="btn options" id="restart" onclick="restart()">Experience again</button>
           </div>
         </div>
       </div>
