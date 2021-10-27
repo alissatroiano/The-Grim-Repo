@@ -10,17 +10,16 @@
   --header-text: 'EB Garamond', sans-serif;
   --content-text: 'Goudy Bookletter 1911', serif;
 
-    /* Colors */
-    /* Replace and add to below with actual project color theme */
-    --p-color: #190225;
-    --s-color: #e64b18;
-    --t-color: #602749;
-    --l-color: #e6e2b3;
+  /* Colors */
+  /* Replace and add to below with actual project color theme */
+  --p-color: #190225;
+  --s-color: #e64b18;
+  --t-color: #602749;
+  --l-color: #e6e2b3;
 
-    /*-cursor position - used to update tracking of torchlight --*/
-    --cursorX: 35vw;
-    --cursorY: 20vh;
-  
+  /*-cursor position - used to update tracking of torchlight --*/
+  --cursorX: 35vw;
+  --cursorY: 20vh;
 }
 
 .large-text {
@@ -269,12 +268,12 @@ p {
 }
 
 .main-scene-container {
-    border: 1px solid var(--s-color);
-    border-radius: 1rem;
-    min-height: 20rem;
-    margin: 2rem auto;
-    background-color:--p-color;
-    position: relative;
+  border: 1px solid var(--s-color);
+  border-radius: 1rem;
+  min-height: 20rem;
+  margin: 2rem auto;
+  background-color: --p-color;
+  position: relative;
 }
 
 .main-scene-image {
@@ -432,7 +431,7 @@ button#start {
 /* Scene 1 */
 .s1-main-img,
 .s2-main-img {
-  background-image: url('/assets/images/beds.jpg');
+  background-image: url('../images/beds.jpg');
   background-size: cover;
   background-position: 0 70%;
   object-fit: contain;
@@ -445,12 +444,12 @@ button#start {
 
 /* Scene 2 */
 .s2-main-img {
-  background-image: url('/assets/images/hallways.jpeg');
+  background-image: url('../images/hallways.jpeg');
   background-position: 0 50%;
 }
 
 .s2-main-img.extra {
-  background-image: url('/assets/images/ritual.jpeg');
+  background-image: url('../images/ritual.jpeg');
   background-position: 0 70%;
 }
 
@@ -523,163 +522,148 @@ button#start {
   }
 }
 
-
 /* Scene 2 */
-
-
-
-
-
 
 /* Scene 3 */
 
 #S3-story-txt1 {
-    position: absolute;
-    top: 4vh;
+  position: absolute;
+  top: 4vh;
 }
 
 .office-img-block {
-    width: 80vw;
-    overflow: hidden;
-
+  width: 80vw;
+  overflow: hidden;
 }
 
 .s3-main-img {
-    background-image: url("/assets/images/office.jpeg");
-    background-size: cover;
-    background-position: 0 70%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    height: 40vh;
-    width:inherit;
-    max-width:1318px;
-    min-height: 100%;
-    max-height: none;
-    overflow: hidden;
+  background-image: url('../images/office.jpeg');
+  background-size: cover;
+  background-position: 0 70%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: inherit;
+  max-width: 1318px;
+  min-height: 100%;
+  max-height: none;
+  overflow: hidden;
 }
 
 #s3-img-overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background-color:rgba(0, 0, 0, 0.98);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
 /*- cupboard -*/
 .hidden1 {
-    /*border:solid 5px red;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:10%;
-    height:30%;
-    position:absolute;
-    top:5%;
-    left:30%;
-    bottom:0;
-    right:0;
-    cursor: default;
-   
+  /*border:solid 5px red;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 10%;
+  height: 30%;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- bin -*/
 .hidden2 {
-    /*-border:solid 5px blue;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:10%;
-    height:20%;
-    position:absolute;
-    top:67%;
-    left:52%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px blue;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 67%;
+  left: 52%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- chair -*/
 .hidden3 {
-    /*-border:solid 5px green;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:8%;
-    height:20%;
-    position:absolute;
-    top:50%;
-    left:65%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px green;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 8%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- desk -*/
 .hidden4 {
-    /*-border:solid 5px yellow;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:20%;
-    height:20%;
-    position:absolute;
-    top:50%;
-    left:28%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px yellow;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- floor -*/
 .hidden5 {
-    /*-border:solid 5px blueviolet;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:25%;
-    height:20%;
-    position:absolute;
-    top:80%;
-    left:5%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px blueviolet;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 .torch {
-    cursor: default;
-    
+  cursor: default;
 }
 
 .torch:before {
-    content: '';
-    display: block;
-    width: 79%;
-    max-width:1320px;
-    overflow-x:hidden;
-    height: inherit;
-    position: fixed;
-    background: radial-gradient(
-      circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,0.5) 60%,
-      rgba(0,0,0,0.95) 100%
-    )
+  content: '';
+  display: block;
+  width: 79%;
+  max-width: 1320px;
+  overflow-x: hidden;
+  height: inherit;
+  position: fixed;
+  background: radial-gradient(
+    circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
 }
 
 .s3-main-img:hover,
-#s3-img-overlay:hover, 
+#s3-img-overlay:hover,
 .hidden1:hover,
 .hidden2:hover,
 .hidden3:hover,
 .hidden4:hover,
 .hidden5:hover {
-      cursor: default;
+  cursor: default;
 }
-
-
 
 /* Scene 4 */
 
-
-
-
 /* Scene 5 */
-
