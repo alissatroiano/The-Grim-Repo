@@ -97,15 +97,15 @@ audio.onpause = function () {
 
 // Scene 2 Routes
 function Scene2() {
-  window.location.href = '/scene2.html';
+  window.location.href = 'scene2.html';
 }
 
 function Scene2_Extra() {
-  window.location.href = '/scene2-extra.html';
+  window.location.href = 'scene2-extra.html';
 };
 
 function Scene3() {
-  window.location.href = '/scene3.html';
+  window.location.href = 'scene3.html';
 }
 
 function restart() {
