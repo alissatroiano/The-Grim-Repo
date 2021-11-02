@@ -10,18 +10,17 @@
   --header-text: 'EB Garamond', sans-serif;
   --content-text: 'Goudy Bookletter 1911', serif;
 
-    /* Colors */
-    /* Replace and add to below with actual project color theme */
-    --p-color: #190225;
-    --s-color: #e64b18;
-    --t-color: #602749;
-    --l-color: #e6e2b3;
-    --d-color: #1a1616;
+  /* Colors */
+  /* Replace and add to below with actual project color theme */
+  --p-color: #190225;
+  --s-color: #e64b18;
+  --t-color: #602749;
+  --l-color: #e6e2b3;
+  --d-color: #1a1616;
 
-    /*-cursor position - used to update tracking of torchlight --*/
-    --cursorX: 35vw;
-    --cursorY: 20vh;
-  
+  /*-cursor position - used to update tracking of torchlight --*/
+  --cursorX: 35vw;
+  --cursorY: 20vh;
 }
 
 .large-text {
@@ -145,7 +144,7 @@ button.options:hover::after {
 }
 
 body {
-    background-color: var(--d-color);
+  background-color: var(--d-color);
 }
 
 a {
@@ -160,7 +159,7 @@ p {
 }
 
 .text-light {
-    color: var(--l-color);
+  color: var(--l-color);
 }
 
 /* Navigation */
@@ -249,11 +248,12 @@ p {
   margin: 2rem auto;
 }
 
-.story-scene-title, .user-interaction-title {
-    font-family: var(--header-text);
-    color: var(--s-color);
-    font-size: 3rem;
-    margin: 1rem;
+.story-scene-title,
+.user-interaction-title {
+  font-family: var(--header-text);
+  color: var(--s-color);
+  font-size: 3rem;
+  margin: 1rem;
 }
 
 .story-detail {
@@ -265,21 +265,21 @@ p {
 }
 
 .main-scene-container {
-    border: 1px solid var(--s-color);
-    border-radius: 1rem;
-    min-height: 20rem;
-    margin: 2rem auto;
-    position: relative;
+  border: 1px solid var(--s-color);
+  border-radius: 1rem;
+  min-height: 20rem;
+  margin: 2rem auto;
+  position: relative;
 }
 
 .main-scene-image {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    object-fit: contain;
-    height: 40vh;
-    min-height: 100%;
-    max-height: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: contain;
+  height: 40vh;
+  min-height: 100%;
+  max-height: none;
 }
 
 .user-interactions-container {
@@ -426,27 +426,26 @@ button#start {
 /* Scene 1 */
 .s1-main-img,
 .s2-main-img {
-    background-size: cover;
-    background-position: 0 70%;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    height: 40vh;
-    min-height: 100%;
-    max-height: none;
-    
+  background-size: cover;
+  background-position: 0 70%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  min-height: 100%;
+  max-height: none;
 }
 .s1-main-img {
-animation: mainImgFadeIn 8s;
+  animation: mainImgFadeIn 8s;
 }
 
 /* Scene 2 */
 .s2-main-img {
-    background-position: 0 50%;
-    animation: mainImgFadeIn 2s;
+  background-position: 0 50%;
+  animation: mainImgFadeIn 2s;
 }
 
 .s2-main-img.extra {
-    background-position: 0 70%;
+  background-position: 0 70%;
 }
 
 @keyframes mainImgFadeIn {
@@ -480,7 +479,6 @@ animation: mainImgFadeIn 8s;
 
 #story-txt1 {
   animation-delay: 3s;
-  
 }
 
 #story-txt2 {
@@ -488,12 +486,12 @@ animation: mainImgFadeIn 8s;
 }
 
 #story-txt-3 {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 #story-txt4 {
-    animation-delay: 15s;
-  }
+  animation-delay: 15s;
+}
 
 /* #story-txt1.scene2,
 #story-txt2.scene2 {
@@ -527,175 +525,174 @@ animation: mainImgFadeIn 8s;
 
 /* error page  */
 .image-404 {
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    overflow: hidden;
-    background: url('../images/pumpkins.jpeg') no-repeat center center;
-    background-size: cover;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  background: url('../images/pumpkins.jpeg') no-repeat center center;
+  background-size: cover;
 }
 
 .bolder-text {
-    color: var(--s-color);
-    text-align: center;
-    position:relative;
-    font-size: xx-large;
-    font-weight: bold;
-    margin-top: 1rem;
+  color: var(--s-color);
+  text-align: center;
+  position: relative;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 #home-link {
-    color:#e64b18;
+  color: #e64b18;
 }
 
-
-
 .office-img-block {
-    width: 80vw;
-    overflow: hidden;
+  width: 80vw;
+  overflow: hidden;
 }
 
 .s3-main-img {
-    background-image: url("/assets/images/office.jpeg");
-    background-size: cover;
-    background-position: 0 70%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    height: 40vh;
-    width:inherit;
-    max-width:1318px;
-    min-height: 100%;
-    max-height: none;
-    overflow: hidden;
+  background-image: url('../images/office.jpeg');
+  background-size: cover;
+  background-position: 0 70%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: inherit;
+  max-width: 1318px;
+  min-height: 100%;
+  max-height: none;
+  overflow: hidden;
 }
 
 #s3-img-overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    background-color:rgba(0, 0, 0, 0.98);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
 /*- cupboard -*/
 .hidden1 {
-    /*border:solid 5px red;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:10%;
-    height:30%;
-    position:absolute;
-    top:5%;
-    left:30%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*border:solid 5px red;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 10%;
+  height: 30%;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- bin -*/
 .hidden2 {
-    /*-border:solid 5px blue;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:10%;
-    height:20%;
-    position:absolute;
-    top:67%;
-    left:52%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px blue;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  top: 67%;
+  left: 52%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- chair -*/
 .hidden3 {
-    /*-border:solid 5px green;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:8%;
-    height:20%;
-    position:absolute;
-    top:50%;
-    left:65%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px green;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 8%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- desk -*/
 .hidden4 {
-    /*-border:solid 5px yellow;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:20%;
-    height:20%;
-    position:absolute;
-    top:50%;
-    left:28%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px yellow;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 /*- floor -*/
 .hidden5 {
-    /*-border:solid 5px blueviolet;-*/
-    border: none;
-    background-color:rgba(0, 0, 0, 0);
-    width:25%;
-    height:20%;
-    position:absolute;
-    top:80%;
-    left:5%;
-    bottom:0;
-    right:0;
-    cursor: default;
+  /*-border:solid 5px blueviolet;-*/
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  bottom: 0;
+  right: 0;
+  cursor: default;
 }
 
 .torch {
-    cursor: default;
+  cursor: default;
 }
 
 .torch:before {
-    content: '';
-    display: block;
-    width: 100%;
-    max-width:1320px;
-    overflow-x:hidden;
-    height: inherit;
-    
-    background: radial-gradient(
-      circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,0.5) 60%,
-      rgba(0,0,0,0.95) 100%
-    )
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 1320px;
+  overflow-x: hidden;
+  height: inherit;
+
+  background: radial-gradient(
+    circle 4vmax at calc(var(--cursorX)) calc(var(--cursorY)),
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
 }
 
 .s3-main-img:hover,
-#s3-img-overlay:hover, 
+#s3-img-overlay:hover,
 .hidden1:hover,
 .hidden2:hover,
 .hidden3:hover,
 .hidden4:hover,
 .hidden5:hover {
-      cursor: default;
+  cursor: default;
 }
 
 /*- modal styles -*/
 
 .modal-content {
-    border-radius: 20px;
-    border: solid var(--s-color) 10px;
-    box-shadow: 6px 0px 0px #602749;
-    outline: transparent;
+  border-radius: 20px;
+  border: solid var(--s-color) 10px;
+  box-shadow: 6px 0px 0px #602749;
+  outline: transparent;
 }
 
-.modal-header, .modal-footer {
-    background-color: var(--s-color);
-    font-family: var(--header-text);
-    font-weight: bold;
+.modal-header,
+.modal-footer {
+  background-color: var(--s-color);
+  font-family: var(--header-text);
+  font-weight: bold;
 }
 
 .modal-header h4 {
@@ -704,18 +701,18 @@ animation: mainImgFadeIn 8s;
 }
 
 .modal-body {
-    font-family:var(--content-text);
-    background-color: var(--l-color);
-    font-size: 2rem;
+  font-family: var(--content-text);
+  background-color: var(--l-color);
+  font-size: 2rem;
 }
 
 /* ************************* Media Queries Start Here */
 @media screen and (min-width: 1400px) {
   body {
-      margin-top: 20px;
-      min-height: 100vh;
-      width: 100%;
-      overflow: hidden;
+    margin-top: 20px;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
   }
   p.story-text {
     margin: 20px 0px 20px 20px;
